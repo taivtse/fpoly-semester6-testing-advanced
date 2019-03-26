@@ -9,5 +9,6 @@
         <module name="Semester5-Frontend-Framework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
