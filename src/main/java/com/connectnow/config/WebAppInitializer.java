@@ -1,4 +1,4 @@
-package vn.edu.fpt.fefw.config;
+package com.connectnow.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

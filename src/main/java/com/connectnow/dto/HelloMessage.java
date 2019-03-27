@@ -1,4 +1,4 @@
-package vn.edu.fpt.fefw.dto;
+package com.connectnow.dto;
 
 public class HelloMessage {
     private String name;

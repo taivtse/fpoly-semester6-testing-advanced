@@ -13,6 +13,9 @@
         <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
         <spring.version>4.3.22.RELEASE</spring.version>
         <jackson.version>2.9.8</jackson.version>
+        <mysql.version>8.0.12</mysql.version>
+        <hibernate.version>4.3.11.Final</hibernate.version>
+        <modelmapper.version>1.1.3</modelmapper.version>
 
         <java-version>1.8</java-version>
     </properties>
@@ -31,6 +34,27 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring Orm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
         </dependency>
 
         <!-- Spring Web Socket -->
@@ -52,6 +76,13 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- Model Mapper -->
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>${modelmapper.version}</version>
         </dependency>
 
 
