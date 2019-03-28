@@ -16,14 +16,14 @@ import java.util.List;
 @SuppressWarnings("unchecked")
 public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<ID, T> {
     private SessionFactory sessionFactory;
-    private Class<T> entityClass;
+    private Class<T> persistenceClass;
 
     @Autowired
     public AbstractDaoImpl(SessionFactory sessionFactory) {
         // set persistenceClass = T
         Type type = getClass().getGenericSuperclass();
         ParameterizedType parameterizedType = (ParameterizedType) type;
-        entityClass = (Class<T>) parameterizedType.getActualTypeArguments()[1];
+        persistenceClass = (Class<T>) parameterizedType.getActualTypeArguments()[1];
 
         this.sessionFactory = sessionFactory;
     }
@@ -38,7 +38,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         Session session = this.getSession();
 
         try {
-            entityList = session.createCriteria(this.entityClass).list();
+            entityList = session.createCriteria(this.persistenceClass).list();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -52,7 +52,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     public List<T> findAllByProperties(Pageable pageable, List<Criterion> criterionList) {
         List<T> entityList = new ArrayList<>();
         Session session = this.getSession();
-        Criteria criteria = session.createCriteria(this.entityClass);
+        Criteria criteria = session.createCriteria(this.persistenceClass);
 
         if (pageable != null) {
 //            set start position offset
@@ -91,7 +91,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     @Override
     public Long countByProperties(List<Criterion> criterionList) {
         Session session = this.getSession();
-        Criteria cr = session.createCriteria(this.entityClass);
+        Criteria cr = session.createCriteria(this.persistenceClass);
         Long rowCount = 0L;
 
         try {
@@ -117,7 +117,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         T entity = null;
 
         try {
-            entity = (T) session.get(this.entityClass, id);
+            entity = (T) session.get(this.persistenceClass, id);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -131,7 +131,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     public T findOneByProperties(List<Criterion> criterionList) {
         T entity = null;
         Session session = this.getSession();
-        Criteria cr = session.createCriteria(this.entityClass);
+        Criteria cr = session.createCriteria(this.persistenceClass);
 
         try {
             if (criterionList != null) {
