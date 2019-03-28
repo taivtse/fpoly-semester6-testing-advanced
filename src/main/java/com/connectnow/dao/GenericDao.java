@@ -22,6 +22,4 @@ public interface GenericDao<ID extends Serializable, T> {
     void update(T entity) throws Exception;
 
     void delete(T entity) throws Exception;
-
-    void deleteById(ID id) throws Exception;
 }
