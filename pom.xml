@@ -17,6 +17,7 @@
         <hibernate.version>4.3.11.Final</hibernate.version>
         <modelmapper.version>1.1.3</modelmapper.version>
         <slf4j.version>1.7.26</slf4j.version>
+        <testng.version>6.14.3</testng.version>
 
         <java-version>1.8</java-version>
     </properties>
@@ -106,6 +107,15 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
+        <!-- Testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
