@@ -15,183 +15,131 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<ID, T> {
+    @Autowired
     private SessionFactory sessionFactory;
     private Class<T> persistenceClass;
 
-    @Autowired
-    public AbstractDaoImpl(SessionFactory sessionFactory) {
+    public AbstractDaoImpl() {
         // set persistenceClass = T
         Type type = getClass().getGenericSuperclass();
         ParameterizedType parameterizedType = (ParameterizedType) type;
         persistenceClass = (Class<T>) parameterizedType.getActualTypeArguments()[1];
-
-        this.sessionFactory = sessionFactory;
     }
 
     protected Session getSession() {
-        return sessionFactory.getCurrentSession();
+        return sessionFactory.openSession();
     }
 
     @Override
-    public List<T> findAll() {
-        List<T> entityList = new ArrayList<>();
+    final public List<T> findAll() {
+        List<T> list;
         Session session = this.getSession();
-
-        try {
-            entityList = session.createCriteria(this.persistenceClass).list();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-
-        return entityList;
+        list = session.createCriteria(this.persistenceClass).list();
+        return list;
     }
 
     @Override
-    public List<T> findAllByProperties(Pageable pageable, List<Criterion> criterionList) {
-        List<T> entityList = new ArrayList<>();
+    public T findOneById(ID id) {
+        T result;
         Session session = this.getSession();
-        Criteria criteria = session.createCriteria(this.persistenceClass);
+        result = (T) session.get(this.persistenceClass, id);
+        return result;
+    }
+
+    @Override
+    public List<T> findAllByProperties(Pageable pageable, List<Criterion> properties) {
+        Session session = this.getSession();
+        Criteria cr = session.createCriteria(this.persistenceClass);
 
         if (pageable != null) {
 //            set start position offset
             if (pageable.getOffset() != null && pageable.getOffset() >= 0) {
-                criteria.setFirstResult(pageable.getOffset());
+                cr.setFirstResult(pageable.getOffset());
             }
 
 //            set limit row
             if (pageable.getLimit() != null && pageable.getLimit() >= 0) {
-                criteria.setMaxResults(pageable.getLimit());
+                cr.setMaxResults(pageable.getLimit());
             }
 
 //            set sorter
             if (pageable.getSorter() != null
                     && !pageable.getSorter().getPropertyName().isEmpty()
                     && !pageable.getSorter().getDirection().isEmpty()) {
-                criteria.addOrder(pageable.getSorter().getOrder());
+                cr.addOrder(pageable.getSorter().getOrder());
             }
         }
 
-        try {
 //        set properties search
-            if (criterionList != null) {
-                criterionList.forEach(criteria::add);
-            }
-            entityList = criteria.list();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            session.close();
+        if (properties != null) {
+            properties.forEach(cr::add);
         }
 
-        return entityList;
+        return cr.list();
     }
 
     @Override
-    public Long countByProperties(List<Criterion> criterionList) {
-        Session session = this.getSession();
-        Criteria cr = session.createCriteria(this.persistenceClass);
-        Long rowCount = 0L;
-
-        try {
-//        set properties search
-            if (criterionList != null) {
-                criterionList.forEach(cr::add);
-            }
-
-            cr.setProjection(Projections.rowCount());
-            rowCount = (Long) cr.uniqueResult();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-
-        return rowCount;
-    }
-
-    @Override
-    public T findOneById(ID id) {
-        Session session = this.getSession();
-        T entity = null;
-
-        try {
-            entity = (T) session.get(this.persistenceClass, id);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            session.close();
-        }
-
-        return entity;
-    }
-
-    @Override
-    public T findOneByProperties(List<Criterion> criterionList) {
-        T entity = null;
+    public Long countByProperties(List<Criterion> properties) {
         Session session = this.getSession();
         Criteria cr = session.createCriteria(this.persistenceClass);
 
-        try {
-            if (criterionList != null) {
-                criterionList.forEach(criterion -> cr.add(criterion));
-            }
-            entity = (T) cr.uniqueResult();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            session.close();
+//        set properties search
+        if (properties != null) {
+            properties.forEach(cr::add);
         }
 
-        return entity;
+        cr.setProjection(Projections.rowCount());
+        return (Long) cr.uniqueResult();
     }
 
     @Override
-    public void save(T entity) {
+    final public T findOneByProperties(List<Criterion> properties) {
         Session session = this.getSession();
-        Transaction transaction = session.beginTransaction();
-
-        try {
-            session.save(entity);
-            transaction.commit();
-        } catch (HibernateException e) {
-            transaction.rollback();
-            throw e;
-        } finally {
-            session.close();
+        Criteria cr = session.createCriteria(this.persistenceClass);
+        if (properties != null) {
+            properties.forEach(cr::add);
         }
+        return (T) cr.uniqueResult();
     }
 
     @Override
-    public void update(T entity) {
+    final public void save(T entity) throws Exception {
         Session session = this.getSession();
-        Transaction transaction = session.beginTransaction();
+        session.save(entity);
+        session.flush();
+        session.refresh(entity);
+    }
 
+    @Override
+    final public void update(T entity) throws Exception {
+        Session session = this.getSession();
         try {
             session.update(entity);
-            transaction.commit();
-        } catch (HibernateException e) {
-            transaction.rollback();
+            session.flush();
+            session.refresh(entity);
+        } catch (Exception e) {
+            if (e instanceof NonUniqueObjectException) {
+                entity = (T) session.merge(entity);
+                session.update(entity);
+                return;
+            }
             throw e;
-        } finally {
-            session.close();
         }
     }
 
     @Override
-    public void delete(T entity) {
+    final public void delete(T entity) throws Exception {
         Session session = this.getSession();
-        Transaction transaction = session.beginTransaction();
-
         try {
             session.delete(entity);
-            transaction.commit();
-        } catch (HibernateException e) {
-            transaction.rollback();
+            session.flush();
+        } catch (Exception e) {
+            if (e instanceof NonUniqueObjectException) {
+                entity = (T) session.merge(entity);
+                session.delete(entity);
+                return;
+            }
             throw e;
-        } finally {
-            session.close();
         }
     }
 }

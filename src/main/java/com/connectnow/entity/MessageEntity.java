@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.math.BigInteger;
 import java.util.Date;
 
+@Entity
+@Table(name = "message")
 public class MessageEntity {
 
     public enum Type {

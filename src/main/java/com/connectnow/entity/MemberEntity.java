@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.math.BigInteger;
 import java.util.List;
 
+@Entity
+@Table(name = "member")
 public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
