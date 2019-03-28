@@ -16,6 +16,7 @@
         <mysql.version>8.0.12</mysql.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
         <modelmapper.version>1.1.3</modelmapper.version>
+        <slf4j.version>1.7.26</slf4j.version>
 
         <java-version>1.8</java-version>
     </properties>
@@ -43,18 +44,18 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <!-- MySQL Connector -->
+        <!-- Spring Context -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
-        <!-- Hibernate -->
+        <!-- Spring Tx -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.version}</version>
         </dependency>
 
         <!-- Spring Web Socket -->
@@ -71,6 +72,20 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
         <!-- Jackson Databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -85,7 +100,12 @@
             <version>${modelmapper.version}</version>
         </dependency>
 
-
+        <!-- Slf4j Api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
 
     </dependencies>
 
