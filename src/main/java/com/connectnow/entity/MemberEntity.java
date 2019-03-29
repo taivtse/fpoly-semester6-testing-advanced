@@ -19,7 +19,7 @@ public class MemberEntity {
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity userEntity;
 
-    @OneToMany(mappedBy = "memberEntity", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "memberEntity", fetch = FetchType.LAZY)
     private List<MessageEntity> messageEntityList;
 
     public BigInteger getId() {

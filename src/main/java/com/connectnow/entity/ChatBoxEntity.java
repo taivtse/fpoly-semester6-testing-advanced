@@ -19,10 +19,10 @@ public class ChatBoxEntity {
     private BigInteger lastMessageId;
 
     @Column(name = "last_message_date", nullable = false)
-    @Temporal(value = TemporalType.DATE)
+//    @Temporal(value = TemporalType.TIMESTAMP)
     private Date lastMessageDate;
 
-    @OneToMany(mappedBy = "chatBoxEntity", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "chatBoxEntity", fetch = FetchType.LAZY)
     private List<MemberEntity> memberEntityList;
 
     public BigInteger getId() {

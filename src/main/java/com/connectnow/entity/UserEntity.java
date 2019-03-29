@@ -65,4 +65,12 @@ public class UserEntity {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    public List<MemberEntity> getMemberEntityList() {
+        return memberEntityList;
+    }
+
+    public void setMemberEntityList(List<MemberEntity> memberEntityList) {
+        this.memberEntityList = memberEntityList;
+    }
 }

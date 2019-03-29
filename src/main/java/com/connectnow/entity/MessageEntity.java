@@ -29,7 +29,6 @@ public class MessageEntity {
     private String content;
 
     @Column(name = "date", nullable = false)
-    @Temporal(value = TemporalType.DATE)
     private Date date;
 
     @Column(name = "type", nullable = false)
