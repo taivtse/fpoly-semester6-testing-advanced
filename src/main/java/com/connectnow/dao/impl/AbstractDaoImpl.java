@@ -2,7 +2,10 @@ package com.connectnow.dao.impl;
 
 import com.connectnow.dao.GenericDao;
 import com.connectnow.paging.Pageable;
-import org.hibernate.*;
+import org.hibernate.Criteria;
+import org.hibernate.NonUniqueObjectException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
