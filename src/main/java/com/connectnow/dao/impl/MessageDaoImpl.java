@@ -1,9 +1,11 @@
 package com.connectnow.dao.impl;
 
-import com.connectnow.dao.MemberDao;
-import com.connectnow.entity.MemberEntity;
+import com.connectnow.dao.MessageDao;
+import com.connectnow.entity.MessageEntity;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigInteger;
 
-public class MessageDaoImpl extends AbstractDaoImpl<BigInteger, MemberEntity> implements MemberDao {
+@Repository
+public class MessageDaoImpl extends AbstractDaoImpl<BigInteger, MessageEntity> implements MessageDao {
 }
