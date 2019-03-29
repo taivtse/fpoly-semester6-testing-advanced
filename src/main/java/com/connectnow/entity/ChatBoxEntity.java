@@ -15,11 +15,10 @@ public class ChatBoxEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "last_message_id", nullable = false)
+    @Column(name = "last_message_id")
     private BigInteger lastMessageId;
 
-    @Column(name = "last_message_date", nullable = false)
-//    @Temporal(value = TemporalType.TIMESTAMP)
+    @Column(name = "last_message_date")
     private Date lastMessageDate;
 
     @OneToMany(mappedBy = "chatBoxEntity", fetch = FetchType.LAZY)

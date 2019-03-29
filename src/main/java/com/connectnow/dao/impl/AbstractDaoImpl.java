@@ -144,4 +144,10 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             throw e;
         }
     }
+
+    @Override
+    public void deleteById(ID id) throws Exception {
+        T entity = this.findOneById(id);
+        this.delete(entity);
+    }
 }
