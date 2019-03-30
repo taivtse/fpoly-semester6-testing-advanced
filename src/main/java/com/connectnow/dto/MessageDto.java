@@ -1,8 +1,5 @@
 package com.connectnow.dto;
 
-import com.connectnow.entity.MemberEntity;
-import com.connectnow.entity.MessageEntity;
-
 import java.math.BigInteger;
 import java.util.Date;
 
@@ -10,8 +7,8 @@ public class MessageDto {
     private BigInteger id;
     private String content;
     private Date date;
-    private MessageEntity.Type type;
-    private MemberEntity memberEntity;
+    private MessageType type;
+    private BigInteger memberId;
 
     public BigInteger getId() {
         return id;
@@ -37,19 +34,19 @@ public class MessageDto {
         this.date = date;
     }
 
-    public MessageEntity.Type getType() {
+    public MessageType getType() {
         return type;
     }
 
-    public void setType(MessageEntity.Type type) {
+    public void setType(MessageType type) {
         this.type = type;
     }
 
-    public MemberEntity getMemberEntity() {
-        return memberEntity;
+    public BigInteger getMemberId() {
+        return memberId;
     }
 
-    public void setMemberEntity(MemberEntity memberEntity) {
-        this.memberEntity = memberEntity;
+    public void setMemberId(BigInteger memberId) {
+        this.memberId = memberId;
     }
 }

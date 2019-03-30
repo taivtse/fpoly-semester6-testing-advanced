@@ -1,5 +1,7 @@
 package com.connectnow.entity;
 
+import com.connectnow.dto.MessageType;
+
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.util.Date;
@@ -7,20 +9,6 @@ import java.util.Date;
 @Entity
 @Table(name = "message")
 public class MessageEntity {
-
-    public enum Type {
-        TEXT("TEXT"), IMAGE("IMAGE"), VIDEO("VIDEO"), FILE("FILE"), ICON("ICON"), STICKER("STICKER");
-        private String type;
-
-        Type(String type) {
-            this.type = type;
-        }
-
-        public String getType() {
-            return type;
-        }
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigInteger id;
@@ -33,7 +21,7 @@ public class MessageEntity {
 
     @Column(name = "type", nullable = false)
     @Enumerated(EnumType.STRING)
-    private Type type;
+    private MessageType type;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", nullable = false)
@@ -63,11 +51,11 @@ public class MessageEntity {
         this.date = date;
     }
 
-    public Type getType() {
+    public MessageType getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(MessageType type) {
         this.type = type;
     }
 
