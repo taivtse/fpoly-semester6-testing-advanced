@@ -11,17 +11,23 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private BigInteger id;
 
-    @Column(name = "username", nullable = false)
-    private String username;
+    @Column(name = "email", length = 100)
+    private String email;
 
-    @Column(name = "password", nullable = false)
-    private String password;
+    @Column(name = "name", nullable = false, length = 100)
+    private String name;
 
-    @Column(name = "full_name", nullable = false)
-    private String fullName;
+    @Column(name = "photo_url")
+    private String photoUrl;
 
-    @Column(name = "image_url")
-    private String imageUrl;
+    @Column(name = "token", nullable = false, length = 500)
+    private String token;
+
+    @Column(name = "provider", nullable = false, length = 50)
+    private String provider;
+
+    @Column(name = "provider_id", nullable = false, length = 50)
+    private String providerId;
 
     @OneToMany(mappedBy = "userEntity", fetch = FetchType.LAZY)
     private List<MemberEntity> memberEntityList;
@@ -34,36 +40,52 @@ public class UserEntity {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getName() {
+        return name;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getPhotoUrl() {
+        return photoUrl;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getToken() {
+        return token;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getProvider() {
+        return provider;
+    }
+
+    public void setProvider(String provider) {
+        this.provider = provider;
+    }
+
+    public String getProviderId() {
+        return providerId;
+    }
+
+    public void setProviderId(String providerId) {
+        this.providerId = providerId;
     }
 
     public List<MemberEntity> getMemberEntityList() {
