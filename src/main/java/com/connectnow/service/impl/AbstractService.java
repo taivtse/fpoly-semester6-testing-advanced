@@ -14,6 +14,11 @@ public class AbstractService<ID extends Serializable, D, E> implements GenericSe
     protected GenericConverter<D, E> converter;
     protected GenericDao<ID, E> genericDao;
 
+    AbstractService(GenericDao genericDao, GenericConverter genericConverter) {
+        this.genericDao = genericDao;
+        this.converter = genericConverter;
+    }
+
     @Override
     public List<D> findAll() {
         List<E> entityList = genericDao.findAll();
@@ -43,6 +48,12 @@ public class AbstractService<ID extends Serializable, D, E> implements GenericSe
     @Override
     public D findOneById(ID id) {
         E entity = genericDao.findOneById(id);
+        return converter.entityToDto(entity);
+    }
+
+    @Override
+    public D findOneByProperties(List<Criterion> criterionList) {
+        E entity = genericDao.findOneByProperties(criterionList);
         return converter.entityToDto(entity);
     }
 

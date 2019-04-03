@@ -13,6 +13,8 @@ public interface GenericService<ID extends Serializable, D> {
 
     D findOneById(ID id);
 
+    D findOneByProperties(List<Criterion> criterionList);
+
     D save(D dto) throws Exception;
 
     D update(D dto) throws Exception;
