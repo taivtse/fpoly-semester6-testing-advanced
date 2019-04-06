@@ -29,8 +29,8 @@ public class UserEntity {
     @Column(name = "provider_id", nullable = false, length = 50)
     private String providerId;
 
-    @OneToMany(mappedBy = "userEntity", fetch = FetchType.LAZY)
-    private List<MemberEntity> memberEntityList;
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<MemberEntity> memberList;
 
     public BigInteger getId() {
         return id;
@@ -88,11 +88,11 @@ public class UserEntity {
         this.providerId = providerId;
     }
 
-    public List<MemberEntity> getMemberEntityList() {
-        return memberEntityList;
+    public List<MemberEntity> getMemberList() {
+        return memberList;
     }
 
-    public void setMemberEntityList(List<MemberEntity> memberEntityList) {
-        this.memberEntityList = memberEntityList;
+    public void setMemberList(List<MemberEntity> memberList) {
+        this.memberList = memberList;
     }
 }

@@ -13,14 +13,14 @@ public class MemberEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "chat_box_id", nullable = false)
-    private ChatBoxEntity chatBoxEntity;
+    private ChatBoxEntity chatBox;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private UserEntity userEntity;
+    private UserEntity user;
 
-    @OneToMany(mappedBy = "memberEntity", fetch = FetchType.LAZY)
-    private List<MessageEntity> messageEntityList;
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
+    private List<MessageEntity> messageList;
 
     public BigInteger getId() {
         return id;
@@ -30,27 +30,27 @@ public class MemberEntity {
         this.id = id;
     }
 
-    public ChatBoxEntity getChatBoxEntity() {
-        return chatBoxEntity;
+    public ChatBoxEntity getChatBox() {
+        return chatBox;
     }
 
-    public void setChatBoxEntity(ChatBoxEntity chatBoxEntity) {
-        this.chatBoxEntity = chatBoxEntity;
+    public void setChatBox(ChatBoxEntity chatBox) {
+        this.chatBox = chatBox;
     }
 
-    public UserEntity getUserEntity() {
-        return userEntity;
+    public UserEntity getUser() {
+        return user;
     }
 
-    public void setUserEntity(UserEntity userEntity) {
-        this.userEntity = userEntity;
+    public void setUser(UserEntity user) {
+        this.user = user;
     }
 
-    public List<MessageEntity> getMessageEntityList() {
-        return messageEntityList;
+    public List<MessageEntity> getMessageList() {
+        return messageList;
     }
 
-    public void setMessageEntityList(List<MessageEntity> messageEntityList) {
-        this.messageEntityList = messageEntityList;
+    public void setMessageList(List<MessageEntity> messageList) {
+        this.messageList = messageList;
     }
 }

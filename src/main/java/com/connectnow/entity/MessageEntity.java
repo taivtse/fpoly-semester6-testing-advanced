@@ -25,7 +25,7 @@ public class MessageEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_id", nullable = false)
-    private MemberEntity memberEntity;
+    private MemberEntity member;
 
     public BigInteger getId() {
         return id;
@@ -59,11 +59,11 @@ public class MessageEntity {
         this.type = type;
     }
 
-    public MemberEntity getMemberEntity() {
-        return memberEntity;
+    public MemberEntity getMember() {
+        return member;
     }
 
-    public void setMemberEntity(MemberEntity memberEntity) {
-        this.memberEntity = memberEntity;
+    public void setMember(MemberEntity member) {
+        this.member = member;
     }
 }

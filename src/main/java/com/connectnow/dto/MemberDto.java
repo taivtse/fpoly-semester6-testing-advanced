@@ -4,8 +4,8 @@ import java.math.BigInteger;
 
 public class MemberDto {
     private BigInteger id;
-    private ChatBoxDto chatBoxDto;
-    private UserDto userDto;
+    private ChatBoxDto chatBox;
+    private UserDto user;
 
     public BigInteger getId() {
         return id;
@@ -15,19 +15,19 @@ public class MemberDto {
         this.id = id;
     }
 
-    public ChatBoxDto getChatBoxDto() {
-        return chatBoxDto;
+    public ChatBoxDto getChatBox() {
+        return chatBox;
     }
 
-    public void setChatBoxDto(ChatBoxDto chatBoxDto) {
-        this.chatBoxDto = chatBoxDto;
+    public void setChatBox(ChatBoxDto chatBox) {
+        this.chatBox = chatBox;
     }
 
-    public UserDto getUserDto() {
-        return userDto;
+    public UserDto getUser() {
+        return user;
     }
 
-    public void setUserDto(UserDto userDto) {
-        this.userDto = userDto;
+    public void setUser(UserDto user) {
+        this.user = user;
     }
 }

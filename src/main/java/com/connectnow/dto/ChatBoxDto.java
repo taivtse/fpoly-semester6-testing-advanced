@@ -5,7 +5,6 @@ import java.util.Date;
 
 public class ChatBoxDto {
     private BigInteger id;
-    private String name;
     private BigInteger lastMessageId;
     private Date lastMessageDate;
 
@@ -15,14 +14,6 @@ public class ChatBoxDto {
 
     public void setId(BigInteger id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public BigInteger getLastMessageId() {
