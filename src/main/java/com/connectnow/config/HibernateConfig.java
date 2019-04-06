@@ -1,5 +1,6 @@
 package com.connectnow.config;
 
+import com.zaxxer.hikari.HikariDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -36,12 +37,17 @@ public class HibernateConfig {
 
     @Bean
     public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
-        dataSource.setUrl(environment.getProperty("jdbc.url"));
-        dataSource.setUsername(environment.getProperty("jdbc.username"));
-        dataSource.setPassword(environment.getProperty("jdbc.password"));
-        return dataSource;
+        final HikariDataSource hikariDataSource = new HikariDataSource();
+        hikariDataSource.setMaximumPoolSize(100);
+        hikariDataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
+        hikariDataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
+        hikariDataSource.addDataSourceProperty("user", environment.getProperty("jdbc.username"));
+        hikariDataSource.addDataSourceProperty("password", environment.getProperty("jdbc.password"));
+        hikariDataSource.addDataSourceProperty("cachePrepStmts", true);
+        hikariDataSource.addDataSourceProperty("prepStmtCacheSize", 250);
+        hikariDataSource.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);
+        hikariDataSource.addDataSourceProperty("useServerPrepStmts", true);
+        return hikariDataSource;
     }
 
     private Properties hibernateProperties() {
