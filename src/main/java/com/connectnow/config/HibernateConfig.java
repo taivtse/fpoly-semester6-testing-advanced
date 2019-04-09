@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -37,19 +36,20 @@ public class HibernateConfig {
 
     @Bean
     public DataSource dataSource() {
-        final HikariDataSource hikariDataSource = new HikariDataSource();
-        hikariDataSource.setMaximumPoolSize(100);
+        final HikariDataSource dataSource = new HikariDataSource();
+        dataSource.setMaximumPoolSize(5);
 
-        hikariDataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
-        hikariDataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
-        hikariDataSource.setUsername(environment.getProperty("jdbc.username"));
-        hikariDataSource.setPassword(environment.getProperty("jdbc.password"));
-
-        hikariDataSource.addDataSourceProperty("cachePrepStmts", true);
-        hikariDataSource.addDataSourceProperty("prepStmtCacheSize", 250);
-        hikariDataSource.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);
-        hikariDataSource.addDataSourceProperty("useServerPrepStmts", true);
-        return hikariDataSource;
+        dataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
+        dataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
+        dataSource.setUsername(environment.getProperty("jdbc.username"));
+        dataSource.setPassword(environment.getProperty("jdbc.password"));
+        dataSource.setMaxLifetime(30000);
+        dataSource.setIdleTimeout(30000);
+        dataSource.addDataSourceProperty("cachePrepStmts", true);
+        dataSource.addDataSourceProperty("prepStmtCacheSize", 250);
+        dataSource.addDataSourceProperty("prepStmtCacheSqlLimit", 2048);
+        dataSource.addDataSourceProperty("useServerPrepStmts", true);
+        return dataSource;
     }
 
     private Properties hibernateProperties() {

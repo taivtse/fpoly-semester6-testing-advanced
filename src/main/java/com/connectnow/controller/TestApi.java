@@ -1,20 +1,23 @@
 package com.connectnow.controller;
 
-import com.connectnow.converter.MessageConverter;
-import com.connectnow.dto.MessageDto;
-import com.connectnow.entity.MessageEntity;
+import com.connectnow.dao.MessageDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.math.BigInteger;
 
 @RestController
 public class TestApi {
     @Autowired
-    private MessageConverter messageConverter;
+    private MessageDao messageDao;
 
-    @PostMapping("/test")
-    @ResponseBody
-    public void test(@RequestBody MessageDto messageDto){
-        MessageEntity entity = messageConverter.dtoToEntity(messageDto);
-        System.out.println(messageDto.getContent());
+    @GetMapping("/test")
+    public void test(){
+        try {
+            messageDao.deleteById(BigInteger.valueOf(5));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
