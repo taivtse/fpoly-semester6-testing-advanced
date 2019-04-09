@@ -37,7 +37,7 @@ public class HibernateConfig {
     @Bean
     public DataSource dataSource() {
         final HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setMaximumPoolSize(5);
+        dataSource.setMaximumPoolSize(100);
 
         dataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
         dataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
