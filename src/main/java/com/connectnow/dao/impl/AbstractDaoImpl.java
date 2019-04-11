@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
@@ -31,12 +30,14 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     }
 
     @Override
-    final public List<T> findAll() {
+    final public List<T> findAll(Pageable pageable) {
         List<T> entityList;
 
         Session session = this.getSession();
         try {
-            entityList = session.createCriteria(this.persistenceClass).list();
+            Criteria criteria = session.createCriteria(this.persistenceClass);
+            this.setPageable(pageable, criteria);
+            entityList = criteria.list();
         } finally {
             session.close();
         }
@@ -66,24 +67,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         try {
             Criteria criteria = session.createCriteria(this.persistenceClass);
 
-            if (pageable != null) {
-//            set start position offset
-                if (pageable.getOffset() != null && pageable.getOffset() >= 0) {
-                    criteria.setFirstResult(pageable.getOffset());
-                }
-
-//            set limit row
-                if (pageable.getLimit() != null && pageable.getLimit() >= 0) {
-                    criteria.setMaxResults(pageable.getLimit());
-                }
-
-//            set sorter
-                if (pageable.getSorter() != null
-                        && !pageable.getSorter().getPropertyName().isEmpty()
-                        && !pageable.getSorter().getDirection().isEmpty()) {
-                    criteria.addOrder(pageable.getSorter().getOrder());
-                }
-            }
+            this.setPageable(pageable, criteria);
 
 //        set properties search
             if (properties != null) {
@@ -210,5 +194,26 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     public void deleteById(ID id) throws Exception {
         T entity = this.findOneById(id);
         this.delete(entity);
+    }
+
+    protected void setPageable(Pageable pageable, Criteria criteria) {
+        if (pageable != null) {
+//            set start position offset
+            if (pageable.getOffset() != null && pageable.getOffset() >= 0) {
+                criteria.setFirstResult(pageable.getOffset());
+            }
+
+//            set limit row
+            if (pageable.getLimit() != null && pageable.getLimit() >= 0) {
+                criteria.setMaxResults(pageable.getLimit());
+            }
+
+//            set sorter
+            if (pageable.getSorter() != null
+                    && !pageable.getSorter().getPropertyName().isEmpty()
+                    && !pageable.getSorter().getDirection().isEmpty()) {
+                criteria.addOrder(pageable.getSorter().getOrder());
+            }
+        }
     }
 }

@@ -5,8 +5,11 @@ import java.util.Date;
 
 public class ChatBoxDto {
     private BigInteger id;
-    private BigInteger lastMessageId;
+    private String name;
+    private String photoUrl;
+    private String lastMessageContent;
     private Date lastMessageDate;
+    private String chatBoxParam;
 
     public BigInteger getId() {
         return id;
@@ -16,12 +19,28 @@ public class ChatBoxDto {
         this.id = id;
     }
 
-    public BigInteger getLastMessageId() {
-        return lastMessageId;
+    public String getName() {
+        return name;
     }
 
-    public void setLastMessageId(BigInteger lastMessageId) {
-        this.lastMessageId = lastMessageId;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
+
+    public String getLastMessageContent() {
+        return lastMessageContent;
+    }
+
+    public void setLastMessageContent(String lastMessageContent) {
+        this.lastMessageContent = lastMessageContent;
     }
 
     public Date getLastMessageDate() {
@@ -30,5 +49,13 @@ public class ChatBoxDto {
 
     public void setLastMessageDate(Date lastMessageDate) {
         this.lastMessageDate = lastMessageDate;
+    }
+
+    public String getChatBoxParam() {
+        return chatBoxParam;
+    }
+
+    public void setChatBoxParam(String chatBoxParam) {
+        this.chatBoxParam = chatBoxParam;
     }
 }

@@ -7,9 +7,9 @@ public class UserDto {
     private String email;
     private String name;
     private String photoUrl;
-    private String token;
     private String provider;
     private String providerId;
+    private String token;
 
     public BigInteger getId() {
         return id;
@@ -43,14 +43,6 @@ public class UserDto {
         this.photoUrl = photoUrl;
     }
 
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
-    }
-
     public String getProvider() {
         return provider;
     }
@@ -65,5 +57,13 @@ public class UserDto {
 
     public void setProviderId(String providerId) {
         this.providerId = providerId;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
