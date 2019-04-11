@@ -21,7 +21,7 @@ public class AbstractService<ID extends Serializable, D, E> implements GenericSe
 
     @Override
     public List<D> findAll(Pageable pageable) {
-        List<E> entityList = genericDao.findAll();
+        List<E> entityList = genericDao.findAll(pageable);
         List<D> dtoList = new ArrayList<>();
 
 //        convert entity to dto and add it to dto list

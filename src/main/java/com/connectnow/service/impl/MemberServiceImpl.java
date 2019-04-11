@@ -17,7 +17,6 @@ import java.math.BigInteger;
 public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, MemberEntity> implements MemberService {
 
     private MemberDao memberDao;
-    private MemberConverter memberConverter;
 
     @Autowired
     public MemberServiceImpl(@Qualifier("memberDaoImpl") GenericDao genericDao,
@@ -25,6 +24,5 @@ public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, Me
         super(genericDao, genericConverter);
 
         this.memberDao = (MemberDao) genericDao;
-        this.memberConverter = (MemberConverter) genericConverter;
     }
 }

@@ -19,7 +19,6 @@ import java.math.BigInteger;
 public class MessageServiceImpl extends AbstractService<BigInteger, MessageDto, MessageEntity> implements MessageBoxService {
 
     private MessageDao messageDao;
-    private MessageConverter messageConverter;
 
     @Autowired
     public MessageServiceImpl(@Qualifier("messageDaoImpl") GenericDao genericDao,
@@ -27,6 +26,5 @@ public class MessageServiceImpl extends AbstractService<BigInteger, MessageDto, 
         super(genericDao, genericConverter);
 
         this.messageDao = (MessageDao) genericDao;
-        this.messageConverter = (MessageConverter) genericConverter;
     }
 }

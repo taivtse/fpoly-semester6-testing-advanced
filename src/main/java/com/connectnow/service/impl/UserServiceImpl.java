@@ -21,7 +21,6 @@ import java.util.List;
 public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEntity> implements UserService {
 
     private UserDao userDao;
-    private UserConverter userConverter;
 
     @Autowired
     public UserServiceImpl(@Qualifier("userDaoImpl") GenericDao genericDao,
@@ -29,7 +28,6 @@ public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEn
         super(genericDao, genericConverter);
 
         this.userDao = (UserDao) genericDao;
-        this.userConverter = (UserConverter) genericConverter;
     }
 
     @Override
