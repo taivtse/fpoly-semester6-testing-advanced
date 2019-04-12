@@ -5,6 +5,8 @@ import com.connectnow.paging.Pageable;
 import org.hibernate.*;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Projections;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
@@ -14,6 +16,8 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<ID, T> {
+    private Logger logger = LoggerFactory.getLogger(AbstractDaoImpl.class);
+
     @Autowired
     private SessionFactory sessionFactory;
     private Class<T> persistenceClass;
@@ -29,15 +33,22 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         return sessionFactory.openSession();
     }
 
+    protected Class<T> getPersistenceClass() {
+        return this.persistenceClass;
+    }
+
     @Override
     final public List<T> findAll(Pageable pageable) {
         List<T> entityList;
 
         Session session = this.getSession();
         try {
-            Criteria criteria = session.createCriteria(this.persistenceClass);
+            Criteria criteria = session.createCriteria(this.getPersistenceClass());
             this.setPageable(pageable, criteria);
             entityList = criteria.list();
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
         } finally {
             session.close();
         }
@@ -51,7 +62,10 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
 
         Session session = this.getSession();
         try {
-            entity = (T) session.get(this.persistenceClass, id);
+            entity = (T) session.get(this.getPersistenceClass(), id);
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
         } finally {
             session.close();
         }
@@ -65,7 +79,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         Session session = this.getSession();
 
         try {
-            Criteria criteria = session.createCriteria(this.persistenceClass);
+            Criteria criteria = session.createCriteria(this.getPersistenceClass());
 
             this.setPageable(pageable, criteria);
 
@@ -75,6 +89,9 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             }
 
             entityList = criteria.list();
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
         } finally {
             session.close();
         }
@@ -88,7 +105,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         Session session = this.getSession();
 
         try {
-            Criteria criteria = session.createCriteria(this.persistenceClass);
+            Criteria criteria = session.createCriteria(this.getPersistenceClass());
 
 //        set properties search
             if (properties != null) {
@@ -98,6 +115,9 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             criteria.setProjection(Projections.rowCount());
 
             count = (Long) criteria.uniqueResult();
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
         } finally {
             session.close();
         }
@@ -111,12 +131,15 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         Session session = this.getSession();
 
         try {
-            Criteria criteria = session.createCriteria(this.persistenceClass);
+            Criteria criteria = session.createCriteria(this.getPersistenceClass());
             if (properties != null) {
                 properties.forEach(criteria::add);
             }
 
             entity = (T) criteria.uniqueResult();
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
         } finally {
             session.close();
         }
@@ -134,6 +157,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             session.refresh(entity);
             transaction.commit();
         } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
         } finally {
@@ -159,6 +183,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
                 return;
             }
 
+            logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
         } finally {
@@ -183,6 +208,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
                 return;
             }
 
+            logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
         } finally {

@@ -9,4 +9,6 @@ public class SystemConstant {
     public static final String JPEG = ".jpeg";
     public static final String PNG = ".png";
     public static final String GIF = ".gif";
+
+    public static final Integer MAX_CHATBOX_PER_PAGE = 2;
 }
