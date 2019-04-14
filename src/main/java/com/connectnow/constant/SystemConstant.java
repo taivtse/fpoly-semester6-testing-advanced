@@ -11,4 +11,5 @@ public class SystemConstant {
     public static final String GIF = ".gif";
 
     public static final Integer MAX_CHATBOX_PER_PAGE = 2;
+    public static final Integer MAX_SERCHUSER_PER_PAGE = 10;
 }
