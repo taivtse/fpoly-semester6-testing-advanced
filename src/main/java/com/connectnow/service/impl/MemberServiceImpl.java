@@ -16,7 +16,7 @@ import java.math.BigInteger;
 @Service
 public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, MemberEntity> implements MemberService {
 
-    private MemberDao memberDao;
+    private final MemberDao memberDao;
 
     @Autowired
     public MemberServiceImpl(@Qualifier("memberDaoImpl") GenericDao genericDao,

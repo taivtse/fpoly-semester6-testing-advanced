@@ -9,6 +9,7 @@ public class MessageDto {
     private Date date;
     private MessageType type;
     private BigInteger memberId;
+    private BigInteger userId;
 
     public BigInteger getId() {
         return id;
@@ -48,5 +49,13 @@ public class MessageDto {
 
     public void setMemberId(BigInteger memberId) {
         this.memberId = memberId;
+    }
+
+    public BigInteger getUserId() {
+        return userId;
+    }
+
+    public void setUserId(BigInteger userId) {
+        this.userId = userId;
     }
 }

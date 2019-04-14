@@ -20,7 +20,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEntity> implements UserService {
 
-    private UserDao userDao;
+    private final UserDao userDao;
 
     @Autowired
     public UserServiceImpl(@Qualifier("userDaoImpl") GenericDao genericDao,
