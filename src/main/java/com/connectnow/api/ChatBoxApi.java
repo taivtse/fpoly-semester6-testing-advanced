@@ -10,7 +10,7 @@ import java.math.BigInteger;
 import java.util.List;
 
 @RestController
-@RequestMapping(ApiConstant.API_CHATBOX_URL)
+@RequestMapping(value = ApiConstant.API_CHATBOX_URL)
 public class ChatBoxApi {
 
     private final ChatBoxService chatBoxService;
@@ -25,12 +25,4 @@ public class ChatBoxApi {
     public List<ChatBoxDto> getList(@RequestParam(name = "userId") BigInteger userId) {
         return chatBoxService.finAllByUserId(null, userId);
     }
-
-//    @GetMapping("user/:userId/page/:page")
-//    @ResponseBody
-//    public List<ChatBoxDto> getPagingList(@PathVariable(name = "page") Integer page,
-//                                          @PathVariable(name = "userId") BigInteger userId) {
-//        Pageable pageable = new PageRequest(page, SystemConstant.MAX_CHATBOX_PER_PAGE, null);
-//        return chatBoxService.finAllByUserId(pageable, userId);
-//    }
 }

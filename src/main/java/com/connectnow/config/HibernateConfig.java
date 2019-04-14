@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -38,7 +39,6 @@ public class HibernateConfig {
     public DataSource dataSource() {
         final HikariDataSource dataSource = new HikariDataSource();
         dataSource.setMaximumPoolSize(100);
-
         dataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
         dataSource.setJdbcUrl(environment.getProperty("jdbc.url"));
         dataSource.setUsername(environment.getProperty("jdbc.username"));

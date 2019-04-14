@@ -4,6 +4,8 @@ import org.modelmapper.ModelMapper;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AbstractConverter<D, E> implements GenericConverter<D, E> {
     private Class<D> dtoClass;
@@ -32,5 +34,19 @@ public class AbstractConverter<D, E> implements GenericConverter<D, E> {
             return null;
         }
         return modelMapper.map(dto, entityClass);
+    }
+
+    @Override
+    public List<D> entityListToDtoList(List<E> entityList) {
+        List<D> dtoList = new ArrayList<>();
+        entityList.forEach(entity -> dtoList.add(this.entityToDto(entity)));
+        return dtoList;
+    }
+
+    @Override
+    public List<E> dtoListToEntityList(List<D> dtoList) {
+        List<E> entityList = new ArrayList<>();
+        dtoList.forEach(dto -> entityList.add(this.dtoToEntity(dto)));
+        return entityList;
     }
 }
