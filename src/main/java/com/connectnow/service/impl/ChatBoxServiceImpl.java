@@ -1,12 +1,10 @@
 package com.connectnow.service.impl;
 
 import com.connectnow.converter.GenericConverter;
-import com.connectnow.dao.ChatBoxDao;
-import com.connectnow.dao.GenericDao;
-import com.connectnow.dao.MessageDao;
-import com.connectnow.dao.UserDao;
+import com.connectnow.dao.*;
 import com.connectnow.dto.ChatBoxDto;
 import com.connectnow.entity.ChatBoxEntity;
+import com.connectnow.entity.MemberEntity;
 import com.connectnow.entity.MessageEntity;
 import com.connectnow.entity.UserEntity;
 import com.connectnow.paging.Pageable;
@@ -25,17 +23,20 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
     private final ChatBoxDao chatBoxDao;
     private final UserDao userDao;
     private final MessageDao messageDao;
+    private final MemberDao memberDao;
 
     @Autowired
     public ChatBoxServiceImpl(@Qualifier("chatBoxDaoImpl") GenericDao genericDao,
                               @Qualifier("chatBoxConverter") GenericConverter genericConverter,
                               UserDao userDao,
-                              MessageDao messageDao) {
+                              MessageDao messageDao,
+                              MemberDao memberDao) {
         super(genericDao, genericConverter);
 
         this.chatBoxDao = (ChatBoxDao) genericDao;
         this.userDao = userDao;
         this.messageDao = messageDao;
+        this.memberDao = memberDao;
     }
 
     @Override
@@ -56,6 +57,10 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
             MessageEntity lastMessage = messageDao.findOneById(chatBoxEntity.getLastMessageId());
             chatBoxDto.setLastMessageContent(lastMessage.getContent());
             chatBoxDto.setLastMessageDate(lastMessage.getDate());
+
+//            get read status
+            MemberEntity memberEntity = memberDao.findOneByChatBoxIdAndUserId(chatBoxEntity.getId(), userId);
+            chatBoxDto.setReadStatus(memberEntity.getReadStatus());
 
             chatBoxDtoList.add(chatBoxDto);
         });

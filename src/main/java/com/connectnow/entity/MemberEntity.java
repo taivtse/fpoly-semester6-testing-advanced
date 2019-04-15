@@ -19,6 +19,9 @@ public class MemberEntity {
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
 
+    @Column(name = "read_status", nullable = false)
+    private boolean readStatus;
+
     @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
     private List<MessageEntity> messageList;
 
@@ -52,5 +55,13 @@ public class MemberEntity {
 
     public void setMessageList(List<MessageEntity> messageList) {
         this.messageList = messageList;
+    }
+
+    public boolean getReadStatus() {
+        return readStatus;
+    }
+
+    public void setReadStatus(boolean readStatus) {
+        this.readStatus = readStatus;
     }
 }
