@@ -25,4 +25,14 @@ public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, Me
 
         this.memberDao = (MemberDao) genericDao;
     }
+
+    @Override
+    public MemberDto updateReadStatusByChatBoxIdAndUserId(BigInteger chatBoxId, BigInteger userId, boolean readStatus) throws Exception {
+        MemberEntity memberEntity = memberDao.findOneByChatBoxIdAndUserId(chatBoxId, userId);
+        if (memberEntity.getReadStatus() != readStatus) {
+            memberEntity.setReadStatus(readStatus);
+            memberDao.update(memberEntity);
+        }
+        return this.converter.entityToDto(memberEntity);
+    }
 }
