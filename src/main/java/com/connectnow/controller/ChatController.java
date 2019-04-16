@@ -1,32 +1,32 @@
 package com.connectnow.controller;
 
-import com.connectnow.dto.Greeting;
-import com.connectnow.dto.HelloMessage;
+import com.connectnow.dto.MessageSocketDto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.handler.annotation.Payload;
+import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
+import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.util.HtmlUtils;
 
 @Controller
-@Transactional
 public class ChatController {
 
-    @RequestMapping(value = "/")
-    public String home() {
-        return "home";
+    private static final Logger logger = LoggerFactory.getLogger(ChatController.class);
+
+    private final SimpMessageSendingOperations messagingTemplate;
+
+    @Autowired
+    public ChatController(SimpMessageSendingOperations messagingTemplate) {
+        this.messagingTemplate = messagingTemplate;
     }
 
-    @MessageMapping("/hello")
-    @SendTo("/topic/greetings")
-    public Greeting greeting(HelloMessage message) {
-        return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
-    }
-
-    @MessageMapping("/xinchao")
-    @SendTo("/topic/chatchit")
-    public Greeting chatchit(HelloMessage message) {
-        return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
+    @MessageMapping("/chat/send/{receivedUserProviderId}")
+    public void sendMessage(@DestinationVariable String receivedUserProviderId,
+                            @Payload MessageSocketDto messageSocketDto,
+                            SimpMessageHeaderAccessor headerAccessor) {
+        messagingTemplate.convertAndSend(String.format("/channel/%s", receivedUserProviderId), messageSocketDto);
     }
 }

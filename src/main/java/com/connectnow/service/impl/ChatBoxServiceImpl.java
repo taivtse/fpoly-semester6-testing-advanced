@@ -58,9 +58,10 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
             chatBoxDto.setLastMessageContent(lastMessage.getContent());
             chatBoxDto.setLastMessageDate(lastMessage.getDate());
 
-//            get read status
+//            get read status, member id
             MemberEntity memberEntity = memberDao.findOneByChatBoxIdAndUserId(chatBoxEntity.getId(), userId);
             chatBoxDto.setReadStatus(memberEntity.getReadStatus());
+            chatBoxDto.setMemberId(memberEntity.getId());
 
             chatBoxDtoList.add(chatBoxDto);
         });

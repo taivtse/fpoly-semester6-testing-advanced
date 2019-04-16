@@ -11,6 +11,7 @@ public class ChatBoxDto {
     private Date lastMessageDate;
     private String chatBoxParam;
     private boolean readStatus;
+    private BigInteger memberId;
 
     public BigInteger getId() {
         return id;
@@ -66,5 +67,13 @@ public class ChatBoxDto {
 
     public void setReadStatus(boolean readStatus) {
         this.readStatus = readStatus;
+    }
+
+    public BigInteger getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(BigInteger memberId) {
+        this.memberId = memberId;
     }
 }
