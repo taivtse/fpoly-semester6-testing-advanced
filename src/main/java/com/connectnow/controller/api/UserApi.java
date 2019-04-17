@@ -6,6 +6,7 @@ import com.connectnow.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigInteger;
 import java.util.List;
 
 @RestController
@@ -20,7 +21,8 @@ public class UserApi {
 
     @GetMapping("search")
     @ResponseBody
-    public List<SearchUserDto> searchUser(@RequestParam(name = "name") String name) {
-        return this.userService.findSearchUserByName(name);
+    public List<SearchUserDto> searchUser(@RequestParam(name = "name") String name,
+                                          @RequestParam(name = "userId") BigInteger userId) {
+        return this.userService.findSearchUserByName(name, userId);
     }
 }

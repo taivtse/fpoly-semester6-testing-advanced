@@ -9,5 +9,5 @@ import java.util.List;
 public interface UserService extends GenericService<BigInteger, UserDto> {
     UserDto findOneByProviderAndProviderId(String provider, String providerId);
 
-    List<SearchUserDto> findSearchUserByName(String name);
+    List<SearchUserDto> findSearchUserByName(String name, BigInteger userId);
 }

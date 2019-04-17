@@ -3,7 +3,6 @@ package com.connectnow.service.impl;
 import com.connectnow.constant.SystemConstant;
 import com.connectnow.converter.GenericConverter;
 import com.connectnow.converter.SearchUserConverter;
-import com.connectnow.converter.UserConverter;
 import com.connectnow.dao.GenericDao;
 import com.connectnow.dao.UserDao;
 import com.connectnow.dto.SearchUserDto;
@@ -21,7 +20,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -48,10 +47,11 @@ public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEn
     }
 
     @Override
-    public List<SearchUserDto> findSearchUserByName(String name) {
-        Criterion criterion = Restrictions.like("name", name, MatchMode.ANYWHERE);
-        Pageable pageable = new PageRequest(1, SystemConstant.MAX_SERCHUSER_PER_PAGE, null);
-        List<UserEntity> userEntityList = this.userDao.findAllByProperties(pageable, Collections.singletonList(criterion));
+    public List<SearchUserDto> findSearchUserByName(String name, BigInteger userId) {
+        Criterion criterion1 = Restrictions.like("name", name, MatchMode.ANYWHERE);
+        Criterion criterion2 = Restrictions.ne("id", userId);
+        Pageable pageable = new PageRequest(1, SystemConstant.MAX_SEARCH_USER_PER_PAGE, null);
+        List<UserEntity> userEntityList = this.userDao.findAllByProperties(pageable, Arrays.asList(criterion1, criterion2));
         return this.searchUserConverter.entityListToDtoList(userEntityList);
     }
 }
