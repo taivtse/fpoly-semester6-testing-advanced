@@ -1,4 +1,4 @@
-package com.connectnow.api;
+package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
 import com.connectnow.dto.SearchUserDto;

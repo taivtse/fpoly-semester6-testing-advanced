@@ -1,9 +1,7 @@
-package com.connectnow.api;
+package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
-import com.connectnow.dto.ChatBoxDto;
 import com.connectnow.dto.MessageDto;
-import com.connectnow.service.ChatBoxService;
 import com.connectnow.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
