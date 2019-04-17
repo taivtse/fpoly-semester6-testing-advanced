@@ -43,15 +43,18 @@ public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEn
         List<Criterion> criterionList = new ArrayList<>();
         criterionList.add(Restrictions.eq("provider", provider));
         criterionList.add(Restrictions.eq("providerId", providerId));
+
         return this.findOneByProperties(criterionList);
     }
 
     @Override
     public List<SearchUserDto> findSearchUserByName(String name, BigInteger userId) {
-        Criterion criterion1 = Restrictions.like("name", name, MatchMode.ANYWHERE);
-        Criterion criterion2 = Restrictions.ne("id", userId);
+        List<Criterion> criterionList = new ArrayList<>();
+        criterionList.add(Restrictions.like("name", name, MatchMode.ANYWHERE));
+        criterionList.add(Restrictions.ne("id", userId));
+
         Pageable pageable = new PageRequest(1, SystemConstant.MAX_SEARCH_USER_PER_PAGE, null);
-        List<UserEntity> userEntityList = this.userDao.findAllByProperties(pageable, Arrays.asList(criterion1, criterion2));
+        List<UserEntity> userEntityList = this.userDao.findAllByProperties(pageable, criterionList);
         return this.searchUserConverter.entityListToDtoList(userEntityList);
     }
 }

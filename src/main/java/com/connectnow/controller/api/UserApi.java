@@ -21,8 +21,8 @@ public class UserApi {
 
     @GetMapping("search")
     @ResponseBody
-    public List<SearchUserDto> searchUser(@RequestParam(name = "name") String name,
-                                          @RequestParam(name = "userId") BigInteger userId) {
+    public List<SearchUserDto> searchOtherUser(@RequestParam(name = "name") String name,
+                                               @RequestParam(name = "userId") BigInteger userId) {
         return this.userService.findSearchUserByName(name, userId);
     }
 }

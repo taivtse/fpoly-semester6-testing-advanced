@@ -6,10 +6,12 @@ import java.util.Date;
 public class MessageSocketDto {
     private BigInteger id;
     private String content;
-    private String type;
+    private MessageType type;
     private Date date;
-    private BigInteger memberId;
-    private String userProviderId;
+    private BigInteger sentMemberId;
+    private String sentUserProviderId;
+    private BigInteger receivedMemberId;
+    private String receivedUserProviderId;
 
     public BigInteger getId() {
         return id;
@@ -27,11 +29,11 @@ public class MessageSocketDto {
         this.content = content;
     }
 
-    public String getType() {
+    public MessageType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(MessageType type) {
         this.type = type;
     }
 
@@ -43,19 +45,35 @@ public class MessageSocketDto {
         this.date = date;
     }
 
-    public BigInteger getMemberId() {
-        return memberId;
+    public BigInteger getSentMemberId() {
+        return sentMemberId;
     }
 
-    public void setMemberId(BigInteger memberId) {
-        this.memberId = memberId;
+    public void setSentMemberId(BigInteger sentMemberId) {
+        this.sentMemberId = sentMemberId;
     }
 
-    public String getUserProviderId() {
-        return userProviderId;
+    public String getSentUserProviderId() {
+        return sentUserProviderId;
     }
 
-    public void setUserProviderId(String userProviderId) {
-        this.userProviderId = userProviderId;
+    public void setSentUserProviderId(String sentUserProviderId) {
+        this.sentUserProviderId = sentUserProviderId;
+    }
+
+    public BigInteger getReceivedMemberId() {
+        return receivedMemberId;
+    }
+
+    public void setReceivedMemberId(BigInteger receivedMemberId) {
+        this.receivedMemberId = receivedMemberId;
+    }
+
+    public String getReceivedUserProviderId() {
+        return receivedUserProviderId;
+    }
+
+    public void setReceivedUserProviderId(String receivedUserProviderId) {
+        this.receivedUserProviderId = receivedUserProviderId;
     }
 }

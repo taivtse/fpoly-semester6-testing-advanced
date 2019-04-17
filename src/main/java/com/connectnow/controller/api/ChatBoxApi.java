@@ -25,4 +25,22 @@ public class ChatBoxApi {
     public List<ChatBoxDto> getList(@RequestParam(name = "userId") BigInteger userId) {
         return chatBoxService.finAllByUserId(null, userId);
     }
+
+    @GetMapping("find-by/member")
+    @ResponseBody
+    public ChatBoxDto getByMemberId(@RequestParam(name = "memberId") BigInteger memberId,
+                                    @RequestParam(name = "userId") BigInteger userId) {
+        return chatBoxService.findOneByMemberId(memberId, userId);
+    }
+
+    @PostMapping
+    @ResponseBody
+    public ChatBoxDto create(@RequestBody ChatBoxDto chatBoxDto) {
+        try {
+            return chatBoxService.save(chatBoxDto);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

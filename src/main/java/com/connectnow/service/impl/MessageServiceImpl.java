@@ -4,7 +4,6 @@ import com.connectnow.converter.GenericConverter;
 import com.connectnow.dao.GenericDao;
 import com.connectnow.dao.MemberDao;
 import com.connectnow.dao.MessageDao;
-import com.connectnow.dao.UserDao;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.entity.MemberEntity;
 import com.connectnow.entity.MessageEntity;

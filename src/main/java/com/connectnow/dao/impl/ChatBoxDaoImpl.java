@@ -40,4 +40,23 @@ public class ChatBoxDaoImpl extends AbstractDaoImpl<BigInteger, ChatBoxEntity> i
 
         return entityList;
     }
+
+    @Override
+    public ChatBoxEntity findOneByMemberId(BigInteger memberId) {
+        ChatBoxEntity chatBoxEntity;
+        Session session = this.getSession();
+        try {
+            Criteria criteria = session.createCriteria(this.getPersistenceClass(), "chatbox");
+            criteria.createAlias("chatbox.memberList", "member");
+            criteria.add(Restrictions.eq("member.id", memberId));
+            chatBoxEntity = (ChatBoxEntity) criteria.uniqueResult();
+        } catch (HibernateException e) {
+            logger.error(e.getMessage(), e);
+            throw e;
+        } finally {
+            session.close();
+        }
+
+        return chatBoxEntity;
+    }
 }

@@ -1,6 +1,8 @@
 package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
+import com.connectnow.dto.ChatBoxDto;
+import com.connectnow.dto.MemberDto;
 import com.connectnow.service.MemberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,5 +39,16 @@ public class MemberApi {
             return ResponseEntity.badRequest().build();
         }
         return ResponseEntity.ok(null);
+    }
+
+    @PostMapping
+    @ResponseBody
+    public MemberDto create(@RequestBody MemberDto memberDto) {
+        try {
+            return memberService.save(memberDto);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
