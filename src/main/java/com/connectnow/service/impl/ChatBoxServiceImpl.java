@@ -3,6 +3,7 @@ package com.connectnow.service.impl;
 import com.connectnow.converter.GenericConverter;
 import com.connectnow.dao.*;
 import com.connectnow.dto.ChatBoxDto;
+import com.connectnow.dto.MemberDto;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.entity.ChatBoxEntity;
 import com.connectnow.entity.MemberEntity;
@@ -59,8 +60,13 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
     }
 
     @Override
-    public ChatBoxDto updateLastDataByMessage(MessageDto messageDto) {
-        return null;
+    public ChatBoxDto updateLastDataByMessage(MessageDto messageDto) throws Exception {
+        ChatBoxEntity chatBoxEntity = chatBoxDao.findOneByMemberId(messageDto.getMemberId());
+        chatBoxEntity.setLastMessageId(messageDto.getId());
+        chatBoxEntity.setLastMessageDate(messageDto.getDate());
+
+        chatBoxDao.update(chatBoxEntity);
+        return this.converter.entityToDto(chatBoxEntity);
     }
 
     private ChatBoxDto fetchDataToChatBoxDto(ChatBoxEntity chatBoxEntity, BigInteger userId) {
@@ -71,11 +77,13 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
         chatBoxDto.setName(partnerUser.getName());
         chatBoxDto.setPhotoUrl(partnerUser.getPhotoUrl());
         chatBoxDto.setChatBoxParam(partnerUser.getProviderId());
+        chatBoxDto.setPartnerUserId(partnerUser.getId());
 
 //            get and set last message content and date
         MessageEntity lastMessage = messageDao.findOneById(chatBoxEntity.getLastMessageId());
         chatBoxDto.setLastMessageContent(lastMessage.getContent());
         chatBoxDto.setLastMessageDate(lastMessage.getDate());
+        chatBoxDto.setLastMessageUserId(lastMessage.getMember().getUser().getId());
 
 //            get read status, member id
         MemberEntity memberEntity = memberDao.findOneByChatBoxIdAndUserId(chatBoxEntity.getId(), userId);

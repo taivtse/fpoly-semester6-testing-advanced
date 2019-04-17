@@ -2,6 +2,7 @@ package com.connectnow.dao.impl;
 
 import com.connectnow.dao.ChatBoxDao;
 import com.connectnow.entity.ChatBoxEntity;
+import com.connectnow.entity.MessageEntity;
 import com.connectnow.paging.Pageable;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;

@@ -12,5 +12,5 @@ public interface ChatBoxService extends GenericService<BigInteger, ChatBoxDto> {
 
     ChatBoxDto findOneByMemberId(BigInteger memberId, BigInteger userId);
 
-    ChatBoxDto updateLastDataByMessage(MessageDto messageDto);
+    ChatBoxDto updateLastDataByMessage(MessageDto messageDto) throws Exception;
 }

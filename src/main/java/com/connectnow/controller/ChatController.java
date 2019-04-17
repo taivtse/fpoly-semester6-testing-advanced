@@ -45,8 +45,8 @@ public class ChatController {
         messageDto.setMemberId(messageSocketDto.getSentMemberId());
 
         try {
-            messageService.save(messageDto);
-
+            messageDto = messageService.save(messageDto);
+            chatBoxService.updateLastDataByMessage(messageDto);
             messagingTemplate.convertAndSend(String.format("/channel/%s", receivedUserProviderId), messageSocketDto);
         } catch (Exception e) {
             e.printStackTrace();

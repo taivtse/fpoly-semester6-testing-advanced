@@ -7,18 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2f11d92-71fa-4ef3-a66d-ce82a6e8281b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/ChatBoxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/ChatBoxService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +40,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="27" />
-          <entry key="JAVA" value="317" />
+          <entry key="JAVA" value="332" />
           <entry key="JSP" value="3" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="6" />
@@ -54,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5865" />
+          <entry key="JAVA" value="6154" />
           <entry key="JSP" value="21" />
           <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="6" />
@@ -66,10 +60,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <folding>
+                <element signature="e#1764#1765#0" expanded="true" />
+                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#1912#1913#0" expanded="true" />
+                <element signature="e#2002#2003#0" expanded="true" />
+                <element signature="e#2042#2043#0" expanded="true" />
+                <element signature="e#2112#2113#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-348">
-              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="419">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-139">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="271">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,12 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-              <folding>
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2400#2401#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="239">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -179,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/api/MemberApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/config/WebSocketEventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/WebSocketEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/SocketResponseDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/constant/ApiConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/config/WebSocketConfig.java" />
@@ -187,16 +195,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MemberDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/ChatBoxService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java" />
       </list>
     </option>
@@ -382,7 +391,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555512884485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555515902029" />
     <property name="extract.method.default.visibility" value="protected" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -586,7 +595,7 @@
       <workItem from="1555218481011" duration="13095000" />
       <workItem from="1555296387456" duration="5699000" />
       <workItem from="1555409088375" duration="11506000" />
-      <workItem from="1555489119484" duration="15904000" />
+      <workItem from="1555489119484" duration="18356000" />
     </task>
     <task id="LOCAL-00001" summary="Change Hikari pool size">
       <created>1554795664989</created>
@@ -606,7 +615,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69772000" />
+    <option name="totallyTimeSpent" value="72224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,7 +643,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47040498" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866043" />
@@ -723,13 +732,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/constant/SystemConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/converter/ChatBoxConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -934,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -978,19 +973,6 @@
           <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1037,49 +1019,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/entity/MessageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          <folding>
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,10 +1047,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/ChatBoxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/entity/MessageEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="271">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1116,29 +1111,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="419">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/ChatBoxService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="146">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+            <element signature="e#2042#2043#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2400#2401#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="239">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
