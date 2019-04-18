@@ -7,7 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2f11d92-71fa-4ef3-a66d-ce82a6e8281b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/semester5-frontend-framework.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/semester5-frontend-framework.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSomething.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSomething.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSomething/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSomething/Command line test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSomething/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSomething/Command line test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,21 +48,23 @@
         <counts>
           <entry key="CLASS" value="27" />
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="350" />
+          <entry key="DBN-SQL" value="1" />
+          <entry key="JAVA" value="351" />
           <entry key="JSP" value="4" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="4" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="28" />
+          <entry key="DBN-SQL" value="6" />
           <entry key="JAVA" value="6434" />
           <entry key="JSP" value="156" />
           <entry key="PLAIN_TEXT" value="46" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="7" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -59,49 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="411" column="11" selection-start-line="411" selection-start-column="11" selection-end-line="411" selection-end-column="11" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -159,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/api/MessageApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/api/ChatBoxApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/MessageDao.java" />
@@ -169,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/converter/GenericConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/converter/AbstractConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/config/HibernateConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/UserDaoImpl.java" />
@@ -210,6 +183,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" />
+        <option value="$PROJECT_DIR$/database/semester5-frontend-framework.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -268,6 +243,11 @@
             <path>
               <item name="semester5-fefw-server-side" type="b2602c69:ProjectViewProjectNode" />
               <item name="server-side" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="semester5-fefw-server-side" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-side" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="semester5-fefw-server-side" type="b2602c69:ProjectViewProjectNode" />
@@ -420,7 +400,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555610381014" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555613778834" />
     <property name="extract.method.default.visibility" value="protected" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -705,7 +685,7 @@
       <workItem from="1555296387456" duration="5699000" />
       <workItem from="1555409088375" duration="11506000" />
       <workItem from="1555489119484" duration="18395000" />
-      <workItem from="1555570303327" duration="17559000" />
+      <workItem from="1555570303327" duration="20620000" />
     </task>
     <task id="LOCAL-00001" summary="Change Hikari pool size">
       <created>1554795664989</created>
@@ -725,7 +705,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89822000" />
+    <option name="totallyTimeSpent" value="92883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -753,14 +733,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47663552" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25856698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866043" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32866043" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24610592" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33021808" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32866043" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32866043" />
@@ -837,21 +817,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/4.3.22.RELEASE/spring-messaging-4.3.22.RELEASE.jar!/org/springframework/messaging/simp/config/MessageBrokerRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/4.3.22.RELEASE/spring-websocket-4.3.22.RELEASE.jar!/org/springframework/web/socket/messaging/SessionConnectedEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/WebSocketEventListener.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.22.RELEASE/spring-web-4.3.22.RELEASE.jar!/org/springframework/http/HttpStatus.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1209,17 +1174,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1227,6 +1185,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/config/HibernateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/semester5-frontend-framework.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
         </state>
       </provider>
     </entry>

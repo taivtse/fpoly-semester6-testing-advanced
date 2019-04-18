@@ -14,6 +14,8 @@
  Date: 19/04/2019 01:01:35
 */
 
+USE `sql12288604`;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
