@@ -36,23 +36,23 @@
                 <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link text-content" href="#" id="btn-home">HOME <span
+                            <a class="nav-link text-content" id="btn-home">HOME <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-content" href="#" id="btn-about">ABOUT US</a>
+                            <a class="nav-link text-content" id="btn-feature">FEATURES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-content" href="#" id="btn-tour">BEST TOUR</a>
+                            <a class="nav-link text-content" id="btn-benefit">BENEFITS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-content" href="#" id="btn-destination">DESTINATION</a>
+                            <a class="nav-link text-content" id="btn-community">COMMUNITY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-content" href="#" id="btn-gallery">GALLERY</a>
+                            <a class="nav-link text-content" id="btn-image">IMAGES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-content" href="#" id="btn-register">REGISTER</a>
+                            <a class="nav-link text-content" id="btn-start">GET STARTED</a>
                         </li>
                     </ul>
                 </div>
@@ -397,32 +397,32 @@
         });
         $('#btn-home').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: 400}, "slow");
+            $("html, body").animate({scrollTop: 0}, "slow");
             resetNavLink(this);
         });
-        $('#btn-about').click(function () {
+        $('#btn-feature').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: $('.wellcome-wrapper').offset().top - 90}, "slow");
+            $("html, body").animate({scrollTop: $('.wellcome-wrapper').offset().top - 70}, "slow");
             resetNavLink(this);
         });
-        $('#btn-tour').click(function () {
+        $('#btn-benefit').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: $('.slogan-wrapper').offset().top - 90}, "slow");
+            $("html, body").animate({scrollTop: $('.feature-wrapper').offset().top - 97}, "slow");
             resetNavLink(this);
         });
-        $('#btn-destination').click(function () {
+        $('#btn-community').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: $('.services-wrapper').offset().top - 90}, "slow");
+            $("html, body").animate({scrollTop: $('.slogan-wrapper').offset().top - 70}, "slow");
             resetNavLink(this);
         });
-        $('#btn-gallery').click(function () {
+        $('#btn-image').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: $('.portfolio-wrapper').offset().top - 90}, "slow");
+            $("html, body").animate({scrollTop: $('.services-wrapper').offset().top - 97}, "slow");
             resetNavLink(this);
         });
-        $('#btn-register').click(function () {
+        $('#btn-start').click(function () {
             isScrolling = false;
-            $("html, body").animate({scrollTop: $('.register-wrapper ').offset().top - 90}, "slow");
+            $("html, body").animate({scrollTop: $('.contact-wrapper').offset().top - 70}, "slow");
             resetNavLink(this);
         });
         // ------------------------- SCROLL PAGE
