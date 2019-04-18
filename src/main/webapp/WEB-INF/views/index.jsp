@@ -327,7 +327,7 @@
         </div>
     </div>
 </footer>
-<div class="light-box">
+<div class="light-box" style="display: none;">
     <div id="btn-close"><span>X</span></div>
     <img src="" alt="" id="image-content">
 </div>
