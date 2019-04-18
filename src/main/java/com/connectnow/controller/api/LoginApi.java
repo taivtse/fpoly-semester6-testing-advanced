@@ -38,6 +38,10 @@ public class LoginApi {
                 && userDto.getProvider() != null && userDto.getProviderId() != null) {
             UserDto savedUserDto = userService.findOneById(userDto.getId());
 
+            if (savedUserDto == null){
+                return false;
+            }
+
             return savedUserDto.getId().equals(userDto.getId())
                     && savedUserDto.getToken().equals(userDto.getToken())
                     && savedUserDto.getProvider().equals(userDto.getProvider())

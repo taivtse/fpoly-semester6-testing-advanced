@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2f11d92-71fa-4ef3-a66d-ce82a6e8281b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +37,7 @@
         <counts>
           <entry key="CLASS" value="27" />
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="349" />
+          <entry key="JAVA" value="350" />
           <entry key="JSP" value="4" />
           <entry key="JavaScript" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -49,7 +48,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="28" />
-          <entry key="JAVA" value="6417" />
+          <entry key="JAVA" value="6434" />
           <entry key="JSP" value="156" />
           <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="6" />
@@ -89,11 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="151" column="46" lean-forward="true" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -151,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/MessageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/api/MessageApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/api/ChatBoxApi.java" />
@@ -202,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java" />
       </list>
     </option>
   </component>
@@ -412,7 +420,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555607414288" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555610378654" />
     <property name="extract.method.default.visibility" value="protected" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -697,7 +705,7 @@
       <workItem from="1555296387456" duration="5699000" />
       <workItem from="1555409088375" duration="11506000" />
       <workItem from="1555489119484" duration="18395000" />
-      <workItem from="1555570303327" duration="15032000" />
+      <workItem from="1555570303327" duration="17559000" />
     </task>
     <task id="LOCAL-00001" summary="Change Hikari pool size">
       <created>1554795664989</created>
@@ -717,7 +725,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87295000" />
+    <option name="totallyTimeSpent" value="89822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,14 +753,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5373832" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47663552" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866043" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32866043" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35825545" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24610592" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32866043" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32866043" />
@@ -829,13 +837,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="2938" column="25" selection-start-line="2938" selection-start-column="25" selection-end-line="2938" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/4.3.22.RELEASE/spring-messaging-4.3.22.RELEASE.jar!/org/springframework/messaging/simp/config/MessageBrokerRegistry.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1217,8 +1218,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="151" column="46" lean-forward="true" selection-start-line="151" selection-start-column="46" selection-end-line="151" selection-end-column="46" />
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
         </state>
       </provider>
     </entry>
