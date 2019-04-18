@@ -9,7 +9,6 @@ public class ChatBoxDto {
     private String photoUrl;
     private String lastMessageContent;
     private Date lastMessageDate;
-    private BigInteger lastMessageUserId;
     private String chatBoxParam;
     private boolean readStatus;
     private BigInteger memberId;
@@ -85,13 +84,5 @@ public class ChatBoxDto {
 
     public void setPartnerUserId(BigInteger partnerUserId) {
         this.partnerUserId = partnerUserId;
-    }
-
-    public BigInteger getLastMessageUserId() {
-        return lastMessageUserId;
-    }
-
-    public void setLastMessageUserId(BigInteger lastMessageUserId) {
-        this.lastMessageUserId = lastMessageUserId;
     }
 }

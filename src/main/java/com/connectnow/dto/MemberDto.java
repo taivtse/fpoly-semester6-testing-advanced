@@ -6,6 +6,7 @@ public class MemberDto {
     private BigInteger id;
     private ChatBoxDto chatBox;
     private UserDto user;
+    private boolean readStatus;
 
     public BigInteger getId() {
         return id;
@@ -29,5 +30,13 @@ public class MemberDto {
 
     public void setUser(UserDto user) {
         this.user = user;
+    }
+
+    public boolean isReadStatus() {
+        return readStatus;
+    }
+
+    public void setReadStatus(boolean readStatus) {
+        this.readStatus = readStatus;
     }
 }

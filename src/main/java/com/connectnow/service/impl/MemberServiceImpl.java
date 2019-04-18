@@ -35,4 +35,14 @@ public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, Me
         }
         return this.converter.entityToDto(memberEntity);
     }
+
+    @Override
+    public MemberDto updateReadStatusByMemberId(BigInteger memberId, boolean readStatus) throws Exception {
+        MemberEntity memberEntity = memberDao.findOneById(memberId);
+        if (memberEntity.getReadStatus() != readStatus) {
+            memberEntity.setReadStatus(readStatus);
+            memberDao.update(memberEntity);
+        }
+        return this.converter.entityToDto(memberEntity);
+    }
 }

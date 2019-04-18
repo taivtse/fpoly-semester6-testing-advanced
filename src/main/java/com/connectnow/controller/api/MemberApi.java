@@ -30,10 +30,9 @@ public class MemberApi {
     @ResponseBody
     public ResponseEntity updateReadStatus(@RequestBody Map<String, Object> data) {
         try {
-            BigInteger chatBoxId = new BigInteger(data.get("chatBoxId").toString());
-            BigInteger userId = new BigInteger(data.get("userId").toString());
+            BigInteger memberId = new BigInteger(data.get("memberId").toString());
             boolean readStatus = (boolean) data.get("readStatus");
-            this.memberService.updateReadStatusByChatBoxIdAndUserId(chatBoxId, userId, readStatus);
+            this.memberService.updateReadStatusByMemberId(memberId, readStatus);
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
             return ResponseEntity.badRequest().build();

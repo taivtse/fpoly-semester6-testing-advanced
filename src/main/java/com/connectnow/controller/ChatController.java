@@ -3,8 +3,8 @@ package com.connectnow.controller;
 import com.connectnow.dto.MemberDto;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.dto.MessageSocketDto;
-import com.connectnow.dto.UserDto;
 import com.connectnow.service.ChatBoxService;
+import com.connectnow.service.MemberService;
 import com.connectnow.service.MessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,12 +26,14 @@ public class ChatController {
     private final SimpMessageSendingOperations messagingTemplate;
     private final MessageService messageService;
     private final ChatBoxService chatBoxService;
+    private final MemberService memberService;
 
     @Autowired
-    public ChatController(SimpMessageSendingOperations messagingTemplate, MessageService messageService, ChatBoxService chatBoxService) {
+    public ChatController(SimpMessageSendingOperations messagingTemplate, MessageService messageService, ChatBoxService chatBoxService, MemberService memberService) {
         this.messagingTemplate = messagingTemplate;
         this.messageService = messageService;
         this.chatBoxService = chatBoxService;
+        this.memberService = memberService;
     }
 
     @MessageMapping("/chat/send/{receivedUserProviderId}")
