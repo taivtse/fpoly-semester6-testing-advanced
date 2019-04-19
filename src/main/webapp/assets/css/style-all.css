@@ -169,6 +169,7 @@ body {
 	transition: .4s!important;
 	color: white;
 	cursor: pointer;
+    border-radius: 0;
 }
 
 .btn-custom:focus{

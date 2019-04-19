@@ -74,8 +74,8 @@
                     Keep your conversations going no matter where you are.
                 </p>
                 <div class="btn-header-wrapper">
-                    <button class="btn-transparent btn-custom text-content">GET STARTED</button>
-                    <button class="btn-purple btn-custom text-content">TAKE A TOUR</button>
+                    <a href="http://localhost:4200/login" class="btn btn-transparent btn-custom text-content">GET STARTED</a>
+                    <a class="btn btn-purple btn-custom text-content">TAKE A TOUR</a>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@
     <div
             class="content-wrapper d-flex justify-content-center flex-column flex-sm-row align-items-center justify-content-sm-between align-items-sm-center h-100">
         <h3 class="contact-title text-white mb-2 mb-sm-0">Sign in with Connect Now to get started.</h3>
-        <button class="btn-transparent btn-custom text-content">CONNECT NOW</button>
+        <a href="http://localhost:4200/login" class="btn btn-transparent btn-custom text-content">CONNECT NOW</a>
     </div>
 </div>
 <div class="container">
