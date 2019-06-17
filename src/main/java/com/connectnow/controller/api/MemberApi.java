@@ -17,8 +17,7 @@ import java.util.Map;
 @RequestMapping(value = ApiConstant.API_MEMBER_URL)
 public class MemberApi {
 
-    Logger logger = LoggerFactory.getLogger(MemberApi.class);
-
+    private final Logger logger = LoggerFactory.getLogger(MemberApi.class);
     private final MemberService memberService;
 
     @Autowired
@@ -46,7 +45,7 @@ public class MemberApi {
         try {
             return memberService.save(memberDto);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
         return null;
     }

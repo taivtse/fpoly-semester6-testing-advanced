@@ -13,8 +13,6 @@ public interface GenericDao<ID extends Serializable, T> {
 
     List<T> findAllByProperties(Pageable pageable, List<Criterion> properties);
 
-    Long countByProperties(List<Criterion> properties);
-
     T findOneByProperties(List<Criterion> properties);
 
     void save(T entity) throws Exception;
@@ -22,6 +20,4 @@ public interface GenericDao<ID extends Serializable, T> {
     void update(T entity) throws Exception;
 
     void delete(T entity) throws Exception;
-
-    void deleteById(ID id) throws Exception;
 }

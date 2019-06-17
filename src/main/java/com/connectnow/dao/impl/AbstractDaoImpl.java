@@ -100,32 +100,6 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
     }
 
     @Override
-    public Long countByProperties(List<Criterion> properties) {
-        Long count;
-        Session session = this.getSession();
-
-        try {
-            Criteria criteria = session.createCriteria(this.getPersistenceClass());
-
-//        set properties search
-            if (properties != null) {
-                properties.forEach(criteria::add);
-            }
-
-            criteria.setProjection(Projections.rowCount());
-
-            count = (Long) criteria.uniqueResult();
-        } catch (HibernateException e) {
-            logger.error(e.getMessage(), e);
-            throw e;
-        } finally {
-            session.close();
-        }
-
-        return count;
-    }
-
-    @Override
     final public T findOneByProperties(List<Criterion> properties) {
         T entity;
         Session session = this.getSession();

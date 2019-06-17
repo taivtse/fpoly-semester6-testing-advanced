@@ -1,8 +1,11 @@
 package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
+import com.connectnow.controller.ChatController;
 import com.connectnow.dto.ChatBoxDto;
 import com.connectnow.service.ChatBoxService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +16,7 @@ import java.util.List;
 @RequestMapping(value = ApiConstant.API_CHATBOX_URL)
 public class ChatBoxApi {
 
+    private final Logger logger = LoggerFactory.getLogger(ChatBoxApi.class);
     private final ChatBoxService chatBoxService;
 
     @Autowired
@@ -39,7 +43,7 @@ public class ChatBoxApi {
         try {
             return chatBoxService.save(chatBoxDto);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
         return null;
     }

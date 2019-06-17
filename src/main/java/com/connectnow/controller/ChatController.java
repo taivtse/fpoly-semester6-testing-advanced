@@ -1,6 +1,5 @@
 package com.connectnow.controller;
 
-import com.connectnow.dto.MemberDto;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.dto.MessageSocketDto;
 import com.connectnow.service.ChatBoxService;
@@ -21,25 +20,21 @@ import java.util.Date;
 @Controller
 public class ChatController {
 
-    private static final Logger logger = LoggerFactory.getLogger(ChatController.class);
-
+    private final Logger logger = LoggerFactory.getLogger(ChatController.class);
     private final SimpMessageSendingOperations messagingTemplate;
     private final MessageService messageService;
     private final ChatBoxService chatBoxService;
-    private final MemberService memberService;
 
     @Autowired
-    public ChatController(SimpMessageSendingOperations messagingTemplate, MessageService messageService, ChatBoxService chatBoxService, MemberService memberService) {
+    public ChatController(SimpMessageSendingOperations messagingTemplate, MessageService messageService, ChatBoxService chatBoxService) {
         this.messagingTemplate = messagingTemplate;
         this.messageService = messageService;
         this.chatBoxService = chatBoxService;
-        this.memberService = memberService;
     }
 
     @MessageMapping("/chat/send/{receivedUserProviderId}")
     public void sendMessage(@DestinationVariable String receivedUserProviderId,
-                            @Payload MessageSocketDto messageSocketDto,
-                            SimpMessageHeaderAccessor headerAccessor) {
+                            @Payload MessageSocketDto messageSocketDto) {
         MessageDto messageDto = new MessageDto();
         messageDto.setContent(messageSocketDto.getContent());
         messageDto.setDate(new Date());
@@ -51,7 +46,7 @@ public class ChatController {
             chatBoxService.updateLastDataByMessage(messageDto);
             messagingTemplate.convertAndSend(String.format("/channel/%s", receivedUserProviderId), messageSocketDto);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e.getMessage(), e);
         }
     }
 }

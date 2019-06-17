@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="semester5-fefw-server-side" />
-        <module name="server-side" />
+        <module name="semester5-frontend-framework" />
       </profile>
     </annotationProcessing>
   </component>

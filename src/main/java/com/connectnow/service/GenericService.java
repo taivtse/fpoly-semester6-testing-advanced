@@ -20,6 +20,4 @@ public interface GenericService<ID extends Serializable, D> {
     D update(D dto) throws Exception;
 
     void delete(D dto) throws Exception;
-
-    void deleteById(ID... ids) throws Exception;
 }
