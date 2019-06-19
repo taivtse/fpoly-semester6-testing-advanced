@@ -4,20 +4,20 @@ import java.math.BigInteger;
 import java.util.Date;
 
 public class MessageSocketDto {
-    private BigInteger id;
+    private Long id;
     private String content;
     private MessageType type;
     private Date date;
-    private BigInteger sentMemberId;
+    private Long sentMemberId;
     private String sentUserProviderId;
-    private BigInteger receivedMemberId;
+    private Long receivedMemberId;
     private String receivedUserProviderId;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -45,11 +45,11 @@ public class MessageSocketDto {
         this.date = date;
     }
 
-    public BigInteger getSentMemberId() {
+    public Long getSentMemberId() {
         return sentMemberId;
     }
 
-    public void setSentMemberId(BigInteger sentMemberId) {
+    public void setSentMemberId(Long sentMemberId) {
         this.sentMemberId = sentMemberId;
     }
 
@@ -61,11 +61,11 @@ public class MessageSocketDto {
         this.sentUserProviderId = sentUserProviderId;
     }
 
-    public BigInteger getReceivedMemberId() {
+    public Long getReceivedMemberId() {
         return receivedMemberId;
     }
 
-    public void setReceivedMemberId(BigInteger receivedMemberId) {
+    public void setReceivedMemberId(Long receivedMemberId) {
         this.receivedMemberId = receivedMemberId;
     }
 

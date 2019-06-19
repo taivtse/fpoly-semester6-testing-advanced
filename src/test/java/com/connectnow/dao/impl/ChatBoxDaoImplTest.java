@@ -14,7 +14,6 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.testng.annotations.Test;
 
-import java.math.BigInteger;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
@@ -31,7 +30,7 @@ public class ChatBoxDaoImplTest extends AbstractTestNGSpringContextTests {
         Sorter sorter = new Sorter("id", SystemConstant.SORT_DESC);
         Pageable pageable = new PageRequest(1, 2, sorter);
 
-        List<ChatBoxEntity> chatBoxEntityList = chatBoxDao.findAllByUserId(pageable, BigInteger.valueOf(6));
+        List<ChatBoxEntity> chatBoxEntityList = chatBoxDao.findAllByUserId(pageable, 6L);
         assertEquals(chatBoxEntityList.size(), 2);
     }
 
@@ -40,12 +39,12 @@ public class ChatBoxDaoImplTest extends AbstractTestNGSpringContextTests {
         Sorter sorter = new Sorter("abcxyz", SystemConstant.SORT_DESC);
         Pageable pageable = new PageRequest(1, 2, sorter);
 
-        chatBoxDao.findAllByUserId(pageable, BigInteger.valueOf(6));
+        chatBoxDao.findAllByUserId(pageable, 6L);
     }
 
     @Test
     public void findOneByMemberIdTest() {
-        ChatBoxEntity chatBoxEntity = chatBoxDao.findOneByMemberId(BigInteger.valueOf(5));
+        ChatBoxEntity chatBoxEntity = chatBoxDao.findOneByMemberId(5L);
         assertNotNull(chatBoxEntity);
     }
 }

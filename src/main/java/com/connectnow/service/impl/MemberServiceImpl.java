@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigInteger;
 
 @Service
-public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, MemberEntity> implements MemberService {
+public class MemberServiceImpl extends AbstractService<Long, MemberDto, MemberEntity> implements MemberService {
 
     private final MemberDao memberDao;
 
@@ -27,7 +27,7 @@ public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, Me
     }
 
     @Override
-    public MemberDto updateReadStatusByChatBoxIdAndUserId(BigInteger chatBoxId, BigInteger userId, boolean readStatus) throws Exception {
+    public MemberDto updateReadStatusByChatBoxIdAndUserId(Long chatBoxId, Long userId, boolean readStatus) throws Exception {
         MemberEntity memberEntity = memberDao.findOneByChatBoxIdAndUserId(chatBoxId, userId);
         if (memberEntity.getReadStatus() != readStatus) {
             memberEntity.setReadStatus(readStatus);
@@ -37,7 +37,7 @@ public class MemberServiceImpl extends AbstractService<BigInteger, MemberDto, Me
     }
 
     @Override
-    public MemberDto updateReadStatusByMemberId(BigInteger memberId, boolean readStatus) throws Exception {
+    public MemberDto updateReadStatusByMemberId(Long memberId, boolean readStatus) throws Exception {
         MemberEntity memberEntity = memberDao.findOneById(memberId);
         if (memberEntity.getReadStatus() != readStatus) {
             memberEntity.setReadStatus(readStatus);

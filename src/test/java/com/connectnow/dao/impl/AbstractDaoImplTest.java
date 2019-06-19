@@ -30,7 +30,7 @@ import static org.testng.Assert.assertNotNull;
 public class AbstractDaoImplTest extends AbstractTestNGSpringContextTests {
     @Autowired
     private ChatBoxDao chatBoxDao;
-    private BigInteger lastSaveId;
+    private Long lastSaveId;
 
     @Test(priority = 0)
     public void findAllTest() {
@@ -50,22 +50,22 @@ public class AbstractDaoImplTest extends AbstractTestNGSpringContextTests {
         int actualSize = chatBoxEntityList.size();
         int expectedSize = 2;
         assertEquals(actualSize, expectedSize);
-        assertEquals(chatBoxEntityList.get(0).getId(), BigInteger.valueOf(4));
+        assertEquals(chatBoxEntityList.get(0).getId(), Long.valueOf(4));
     }
 
     @Test(priority = 2)
     public void findOneByIdTest() {
-        ChatBoxEntity chatBoxEntity = chatBoxDao.findOneById(BigInteger.valueOf(2));
+        ChatBoxEntity chatBoxEntity = chatBoxDao.findOneById(2L);
 
         assertNotNull(chatBoxEntity);
-        assertEquals(chatBoxEntity.getId(), BigInteger.valueOf(2));
-        assertEquals(chatBoxEntity.getLastMessageId(), BigInteger.valueOf(6));
+        assertEquals(chatBoxEntity.getId(), Long.valueOf(2));
+        assertEquals(chatBoxEntity.getLastMessageId(), Long.valueOf(6));
     }
 
     @Test(priority = 3)
     public void findAllByPropertiesTest() {
         List<Criterion> criterionList = new ArrayList<>();
-        criterionList.add(Restrictions.gt("lastMessageId", BigInteger.valueOf(10)));
+        criterionList.add(Restrictions.gt("lastMessageId", 10L));
         List<ChatBoxEntity> chatBoxEntityList = chatBoxDao.findAllByProperties(null, criterionList);
 
         int actualSize = chatBoxEntityList.size();
@@ -76,37 +76,37 @@ public class AbstractDaoImplTest extends AbstractTestNGSpringContextTests {
     @Test(priority = 4, expectedExceptions = QueryException.class)
     public void findAllByProperties_exceptionTest() {
         List<Criterion> criterionList = new ArrayList<>();
-        criterionList.add(Restrictions.gt("abcxyz", BigInteger.valueOf(10)));
+        criterionList.add(Restrictions.gt("abcxyz", 10L));
         chatBoxDao.findAllByProperties(null, criterionList);
     }
 
     @Test(priority = 5)
     public void findOneByPropertiesTest() {
         List<Criterion> criterionList = new ArrayList<>();
-        criterionList.add(Restrictions.eq("lastMessageId", BigInteger.valueOf(171)));
+        criterionList.add(Restrictions.eq("lastMessageId", 171L));
         ChatBoxEntity chatBoxEntity = chatBoxDao.findOneByProperties(criterionList);
 
         assertNotNull(chatBoxEntity);
-        assertEquals(chatBoxEntity.getLastMessageId(), BigInteger.valueOf(171));
+        assertEquals(chatBoxEntity.getLastMessageId(), Long.valueOf(171));
     }
 
     @Test(priority = 6, expectedExceptions = QueryException.class)
     public void findOneByProperties_exceptionTest() {
         List<Criterion> criterionList = new ArrayList<>();
-        criterionList.add(Restrictions.eq("abcxyz", BigInteger.valueOf(171)));
+        criterionList.add(Restrictions.eq("abcxyz", 171L));
         chatBoxDao.findOneByProperties(criterionList);
     }
 
     @Test(priority = 7)
     public void saveTest() throws Exception {
         ChatBoxEntity chatBoxEntity = new ChatBoxEntity();
-        chatBoxEntity.setLastMessageId(BigInteger.valueOf(101));
+        chatBoxEntity.setLastMessageId(101L);
 
         chatBoxDao.save(chatBoxEntity);
 
         lastSaveId = chatBoxEntity.getId();
         assertNotNull(lastSaveId);
-        assertEquals(chatBoxEntity.getLastMessageId(), BigInteger.valueOf(101));
+        assertEquals(chatBoxEntity.getLastMessageId(), Long.valueOf(101));
     }
 
     @Test(priority = 8, expectedExceptions = IllegalArgumentException.class)
@@ -117,10 +117,10 @@ public class AbstractDaoImplTest extends AbstractTestNGSpringContextTests {
     @Test(priority = 9)
     public void updateTest() throws Exception {
         ChatBoxEntity chatBoxEntity = chatBoxDao.findOneById(lastSaveId);
-        chatBoxEntity.setLastMessageId(BigInteger.valueOf(103));
+        chatBoxEntity.setLastMessageId(103L);
 
         chatBoxDao.update(chatBoxEntity);
-        assertEquals(chatBoxEntity.getLastMessageId(), BigInteger.valueOf(103));
+        assertEquals(chatBoxEntity.getLastMessageId(), Long.valueOf(103));
     }
 
     @Test(priority = 10, expectedExceptions = IllegalArgumentException.class)
@@ -148,7 +148,7 @@ public class AbstractDaoImplTest extends AbstractTestNGSpringContextTests {
     @Test(priority = 14, expectedExceptions = StaleStateException.class)
     public void delete_exception1Test() throws Exception {
         ChatBoxEntity chatBoxEntity = new ChatBoxEntity();
-        chatBoxEntity.setId(BigInteger.valueOf(100));
+        chatBoxEntity.setId(100L);
         chatBoxDao.delete(chatBoxEntity);
     }
 }

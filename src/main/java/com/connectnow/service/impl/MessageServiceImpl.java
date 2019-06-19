@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class MessageServiceImpl extends AbstractService<BigInteger, MessageDto, MessageEntity> implements MessageService {
+public class MessageServiceImpl extends AbstractService<Long, MessageDto, MessageEntity> implements MessageService {
 
     private final MessageDao messageDao;
     private final MemberDao memberDao;
@@ -34,7 +34,7 @@ public class MessageServiceImpl extends AbstractService<BigInteger, MessageDto, 
     }
 
     @Override
-    public List<MessageDto> findAllByChatBoxId(Pageable pageable, BigInteger chatBoxId) {
+    public List<MessageDto> findAllByChatBoxId(Pageable pageable, Long chatBoxId) {
         List<MessageEntity> messageEntityList = messageDao.findAllByChatBoxId(pageable, chatBoxId);
         List<MessageDto> messageDtoList = new ArrayList<>();
         messageEntityList.forEach(messageEntity -> {

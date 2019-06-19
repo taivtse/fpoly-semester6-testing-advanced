@@ -4,21 +4,21 @@ import java.math.BigInteger;
 import java.util.Date;
 
 public class ChatBoxDto {
-    private BigInteger id;
+    private Long id;
     private String name;
     private String photoUrl;
     private String lastMessageContent;
     private Date lastMessageDate;
     private String chatBoxParam;
     private boolean readStatus;
-    private BigInteger memberId;
-    private BigInteger partnerUserId;
+    private Long memberId;
+    private Long partnerUserId;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -70,19 +70,19 @@ public class ChatBoxDto {
         this.readStatus = readStatus;
     }
 
-    public BigInteger getMemberId() {
+    public Long getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(BigInteger memberId) {
+    public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
 
-    public BigInteger getPartnerUserId() {
+    public Long getPartnerUserId() {
         return partnerUserId;
     }
 
-    public void setPartnerUserId(BigInteger partnerUserId) {
+    public void setPartnerUserId(Long partnerUserId) {
         this.partnerUserId = partnerUserId;
     }
 }

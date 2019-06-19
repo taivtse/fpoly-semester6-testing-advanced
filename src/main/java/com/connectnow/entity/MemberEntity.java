@@ -9,7 +9,7 @@ import java.util.List;
 public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private BigInteger id;
+    private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "chat_box_id", nullable = false)
@@ -25,11 +25,11 @@ public class MemberEntity {
     @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
     private List<MessageEntity> messageList;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

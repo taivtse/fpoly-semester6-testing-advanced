@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEntity> implements UserService {
+public class UserServiceImpl extends AbstractService<Long, UserDto, UserEntity> implements UserService {
 
     private final UserDao userDao;
     private final SearchUserConverter searchUserConverter;
@@ -48,7 +48,7 @@ public class UserServiceImpl extends AbstractService<BigInteger, UserDto, UserEn
     }
 
     @Override
-    public List<SearchUserDto> findSearchUserByName(String name, BigInteger userId) {
+    public List<SearchUserDto> findSearchUserByName(String name, Long userId) {
         List<Criterion> criterionList = new ArrayList<>();
         criterionList.add(Restrictions.like("name", name, MatchMode.ANYWHERE));
         criterionList.add(Restrictions.ne("id", userId));

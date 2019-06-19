@@ -1,7 +1,6 @@
 package com.connectnow.entity;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 
@@ -10,10 +9,10 @@ import java.util.List;
 public class ChatBoxEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private BigInteger id;
+    private Long id;
 
     @Column(name = "last_message_id")
-    private BigInteger lastMessageId;
+    private Long lastMessageId;
 
     @Column(name = "last_message_date")
     private Date lastMessageDate;
@@ -21,19 +20,19 @@ public class ChatBoxEntity {
     @OneToMany(mappedBy = "chatBox", fetch = FetchType.LAZY)
     private List<MemberEntity> memberList;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public BigInteger getLastMessageId() {
+    public Long getLastMessageId() {
         return lastMessageId;
     }
 
-    public void setLastMessageId(BigInteger lastMessageId) {
+    public void setLastMessageId(Long lastMessageId) {
         this.lastMessageId = lastMessageId;
     }
 

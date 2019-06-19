@@ -10,6 +10,9 @@
     <test name="extends-dao-test">
         <classes>
             <class name="com.connectnow.dao.impl.ChatBoxDaoImplTest"/>
+            <class name="com.connectnow.dao.impl.MessageDaoImplTest"/>
+            <class name="com.connectnow.dao.impl.MemberDaoImplTest"/>
+            <class name="com.connectnow.dao.impl.UserDaoImplTest"/>
         </classes>
     </test>
 </suite>

@@ -22,7 +22,7 @@ public class UserApi {
     @GetMapping("search")
     @ResponseBody
     public List<SearchUserDto> searchOtherUser(@RequestParam(name = "name") String name,
-                                               @RequestParam(name = "userId") BigInteger userId) {
+                                               @RequestParam(name = "userId") Long userId) {
         return this.userService.findSearchUserByName(name, userId);
     }
 }

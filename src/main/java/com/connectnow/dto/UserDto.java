@@ -3,7 +3,7 @@ package com.connectnow.dto;
 import java.math.BigInteger;
 
 public class UserDto {
-    private BigInteger id;
+    private Long id;
     private String email;
     private String name;
     private String photoUrl;
@@ -11,11 +11,11 @@ public class UserDto {
     private String providerId;
     private String token;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

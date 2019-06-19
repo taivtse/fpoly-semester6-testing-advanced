@@ -4,18 +4,18 @@ import java.math.BigInteger;
 import java.util.Date;
 
 public class MessageDto {
-    private BigInteger id;
+    private Long id;
     private String content;
     private Date date;
     private MessageType type;
-    private BigInteger memberId;
-    private BigInteger userId;
+    private Long memberId;
+    private Long userId;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -43,19 +43,19 @@ public class MessageDto {
         this.type = type;
     }
 
-    public BigInteger getMemberId() {
+    public Long getMemberId() {
         return memberId;
     }
 
-    public void setMemberId(BigInteger memberId) {
+    public void setMemberId(Long memberId) {
         this.memberId = memberId;
     }
 
-    public BigInteger getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(BigInteger userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 }

@@ -6,13 +6,12 @@ import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 @Repository
-public class MemberDaoImpl extends AbstractDaoImpl<BigInteger, MemberEntity> implements MemberDao {
+public class MemberDaoImpl extends AbstractDaoImpl<Long, MemberEntity> implements MemberDao {
     @Override
-    public MemberEntity findOneByChatBoxIdAndUserId(BigInteger chatBoxId, BigInteger userId) {
+    public MemberEntity findOneByChatBoxIdAndUserId(Long chatBoxId, Long userId) {
         Criterion criterion1 = Restrictions.eq("chatBox.id", chatBoxId);
         Criterion criterion2 = Restrictions.eq("user.id", userId);
         return this.findOneByProperties(Arrays.asList(criterion1, criterion2));

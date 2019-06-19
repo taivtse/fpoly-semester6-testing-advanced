@@ -6,6 +6,6 @@ import com.connectnow.paging.Pageable;
 import java.math.BigInteger;
 import java.util.List;
 
-public interface MessageDao extends GenericDao<BigInteger, MessageEntity> {
-    List<MessageEntity> findAllByChatBoxId(Pageable pageable, BigInteger chatBoxId);
+public interface MessageDao extends GenericDao<Long, MessageEntity> {
+    List<MessageEntity> findAllByChatBoxId(Pageable pageable, Long chatBoxId);
 }

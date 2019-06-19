@@ -3,16 +3,16 @@ package com.connectnow.dto;
 import java.math.BigInteger;
 
 public class SearchUserDto {
-    private BigInteger id;
+    private Long id;
     private String name;
     private String photoUrl;
     private String providerId;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

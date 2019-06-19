@@ -1,7 +1,6 @@
 package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
-import com.connectnow.controller.ChatController;
 import com.connectnow.dto.ChatBoxDto;
 import com.connectnow.service.ChatBoxService;
 import org.slf4j.Logger;
@@ -9,7 +8,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigInteger;
 import java.util.List;
 
 @RestController
@@ -26,14 +24,14 @@ public class ChatBoxApi {
 
     @GetMapping
     @ResponseBody
-    public List<ChatBoxDto> getList(@RequestParam(name = "userId") BigInteger userId) {
+    public List<ChatBoxDto> getList(@RequestParam(name = "userId") Long userId) {
         return chatBoxService.finAllByUserId(null, userId);
     }
 
     @GetMapping("find-by/member")
     @ResponseBody
-    public ChatBoxDto getByMemberId(@RequestParam(name = "memberId") BigInteger memberId,
-                                    @RequestParam(name = "userId") BigInteger userId) {
+    public ChatBoxDto getByMemberId(@RequestParam(name = "memberId") Long memberId,
+                                    @RequestParam(name = "userId") Long userId) {
         return chatBoxService.findOneByMemberId(memberId, userId);
     }
 

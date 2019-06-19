@@ -23,16 +23,7 @@ public class Sorter {
     public String getPropertyName() {
         return propertyName;
     }
-
-    public void setPropertyName(String propertyName) {
-        this.propertyName = propertyName;
-    }
-
     public String getDirection() {
         return direction;
-    }
-
-    public void setDirection(String direction) {
-        this.direction = direction;
     }
 }

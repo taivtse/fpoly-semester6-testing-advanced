@@ -3,7 +3,6 @@ package com.connectnow.service.impl;
 import com.connectnow.converter.GenericConverter;
 import com.connectnow.dao.*;
 import com.connectnow.dto.ChatBoxDto;
-import com.connectnow.dto.MemberDto;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.entity.ChatBoxEntity;
 import com.connectnow.entity.MemberEntity;
@@ -15,12 +14,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, ChatBoxEntity> implements ChatBoxService {
+public class ChatBoxServiceImpl extends AbstractService<Long, ChatBoxDto, ChatBoxEntity> implements ChatBoxService {
 
     private final ChatBoxDao chatBoxDao;
     private final UserDao userDao;
@@ -42,7 +40,7 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
     }
 
     @Override
-    public List<ChatBoxDto> finAllByUserId(Pageable pageable, BigInteger userId) {
+    public List<ChatBoxDto> finAllByUserId(Pageable pageable, Long userId) {
         List<ChatBoxEntity> chatBoxEntityList = chatBoxDao.findAllByUserId(pageable, userId);
         List<ChatBoxDto> chatBoxDtoList = new ArrayList<>();
 
@@ -54,7 +52,7 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
     }
 
     @Override
-    public ChatBoxDto findOneByMemberId(BigInteger memberId, BigInteger userId) {
+    public ChatBoxDto findOneByMemberId(Long memberId, Long userId) {
         ChatBoxEntity chatBoxEntity = this.chatBoxDao.findOneByMemberId(memberId);
         return this.fetchDataToChatBoxDto(chatBoxEntity, userId);
     }
@@ -69,7 +67,7 @@ public class ChatBoxServiceImpl extends AbstractService<BigInteger, ChatBoxDto, 
         return this.converter.entityToDto(chatBoxEntity);
     }
 
-    private ChatBoxDto fetchDataToChatBoxDto(ChatBoxEntity chatBoxEntity, BigInteger userId) {
+    private ChatBoxDto fetchDataToChatBoxDto(ChatBoxEntity chatBoxEntity, Long userId) {
         ChatBoxDto chatBoxDto = this.converter.entityToDto(chatBoxEntity);
 
 //            get and set chat box name and chat box image

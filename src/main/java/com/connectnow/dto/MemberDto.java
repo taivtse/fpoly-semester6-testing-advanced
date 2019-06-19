@@ -3,16 +3,16 @@ package com.connectnow.dto;
 import java.math.BigInteger;
 
 public class MemberDto {
-    private BigInteger id;
+    private Long id;
     private ChatBoxDto chatBox;
     private UserDto user;
     private boolean readStatus;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

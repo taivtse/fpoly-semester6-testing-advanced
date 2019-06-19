@@ -11,15 +11,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import java.math.BigInteger;
 import java.util.List;
 
 @Repository
-public class ChatBoxDaoImpl extends AbstractDaoImpl<BigInteger, ChatBoxEntity> implements ChatBoxDao {
+public class ChatBoxDaoImpl extends AbstractDaoImpl<Long, ChatBoxEntity> implements ChatBoxDao {
     private Logger logger = LoggerFactory.getLogger(ChatBoxDaoImpl.class);
 
     @Override
-    public List<ChatBoxEntity> findAllByUserId(Pageable pageable, BigInteger userId) {
+    public List<ChatBoxEntity> findAllByUserId(Pageable pageable, Long userId) {
         List<ChatBoxEntity> entityList;
 
         Session session = this.getSession();
@@ -41,7 +40,7 @@ public class ChatBoxDaoImpl extends AbstractDaoImpl<BigInteger, ChatBoxEntity> i
     }
 
     @Override
-    public ChatBoxEntity findOneByMemberId(BigInteger memberId) {
+    public ChatBoxEntity findOneByMemberId(Long memberId) {
         ChatBoxEntity chatBoxEntity;
         Session session = this.getSession();
         try {

@@ -11,7 +11,7 @@ import java.util.Date;
 public class MessageEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private BigInteger id;
+    private Long id;
 
     @Column(name = "content", nullable = false, length = 2000)
     private String content;
@@ -27,11 +27,11 @@ public class MessageEntity {
     @JoinColumn(name = "member_id", nullable = false)
     private MemberEntity member;
 
-    public BigInteger getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(BigInteger id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

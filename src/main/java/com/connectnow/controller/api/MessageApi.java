@@ -22,7 +22,7 @@ public class MessageApi {
 
     @GetMapping
     @ResponseBody
-    public List<MessageDto> getList(@RequestParam(name = "chatBoxId") BigInteger chatBoxId) {
+    public List<MessageDto> getList(@RequestParam(name = "chatBoxId") Long chatBoxId) {
         return messageService.findAllByChatBoxId(null, chatBoxId);
     }
 }

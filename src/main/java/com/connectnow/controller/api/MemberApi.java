@@ -1,7 +1,6 @@
 package com.connectnow.controller.api;
 
 import com.connectnow.constant.ApiConstant;
-import com.connectnow.dto.ChatBoxDto;
 import com.connectnow.dto.MemberDto;
 import com.connectnow.service.MemberService;
 import org.slf4j.Logger;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigInteger;
 import java.util.Map;
 
 @RestController
@@ -29,7 +27,7 @@ public class MemberApi {
     @ResponseBody
     public ResponseEntity updateReadStatus(@RequestBody Map<String, Object> data) {
         try {
-            BigInteger memberId = new BigInteger(data.get("memberId").toString());
+            Long memberId = Long.valueOf(data.get("memberId").toString());
             boolean readStatus = (boolean) data.get("readStatus");
             this.memberService.updateReadStatusByMemberId(memberId, readStatus);
         } catch (Exception e) {

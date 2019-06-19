@@ -7,8 +7,8 @@ import com.connectnow.paging.Pageable;
 import java.math.BigInteger;
 import java.util.List;
 
-public interface ChatBoxDao extends GenericDao<BigInteger, ChatBoxEntity> {
-    List<ChatBoxEntity> findAllByUserId(Pageable pageable, BigInteger userId);
+public interface ChatBoxDao extends GenericDao<Long, ChatBoxEntity> {
+    List<ChatBoxEntity> findAllByUserId(Pageable pageable, Long userId);
 
-    ChatBoxEntity findOneByMemberId(BigInteger memberId);
+    ChatBoxEntity findOneByMemberId(Long memberId);
 }
