@@ -2,26 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d19a0c4-4035-450a-92d3-e0bf121ca9d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/vothanhtai.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MemberDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MessageDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/vothanhtai.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/IndexController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/config/SpringWebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/config/SpringWebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/GenericService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/GenericService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestSomething.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/GenericDaoTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/ChatBoxDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/ChatBoxDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/config/SpringWebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/config/SpringWebConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestSomething.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/ChatBoxApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/ChatBoxApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/MemberApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/MemberApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dao/GenericDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dao/GenericDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dao/impl/AbstractDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dao/impl/AbstractDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dao/impl/ChatBoxDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dao/impl/ChatBoxDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/GenericService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/GenericService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/AbstractService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/AbstractService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/connectnow/dao/GenericDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/connectnow/dao/impl/ChatBoxDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/connectnow/dao/impl/ChatBoxDaoImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,40 +35,114 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AdvancedTesting$_Users_vothanhtai_Documents_FPT_Polytechnic_Semester6_AdvancedTesting_Project_AdvancedTesting_src_test_java_com_connectnow_dao_impl_TestNGSuiteDao_xml.ic" NAME="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml Coverage Results" MODIFIED="1560779821159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/AdvancedTesting$ChatBoxDaoImplTest_save_exception1Test.ic" NAME="ChatBoxDaoImplTest.save_exception1Test Coverage Results" MODIFIED="1560770923758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AdvancedTesting$ChatBoxDaoImplTest_findAllByUserId_exceptionTest.ic" NAME="ChatBoxDaoImplTest.findAllByUserId_exceptionTest Coverage Results" MODIFIED="1560779151976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AdvancedTesting$AbstractDaoTest_updateTest.ic" NAME="AbstractDaoTest.updateTest Coverage Results" MODIFIED="1560775912697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AdvancedTesting$ChatBoxDaoImplTest_findAllByUserIdTest.ic" NAME="ChatBoxDaoImplTest.findAllByUserIdTest Coverage Results" MODIFIED="1560777025120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AdvancedTesting$ChatBoxDaoImplTest.ic" NAME="AbstractDaoTest Coverage Results" MODIFIED="1560775958898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/AdvancedTesting$com_connectnow_dao_impl.ic" NAME="com.connectnow.dao.impl Coverage Results" MODIFIED="1560777073317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.connectnow.dao.impl.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="174" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1569817917">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="92" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="32" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="1589" />
+          <entry key="XML" value="98" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MessageDaoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="347">
+              <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/entity/ChatBoxEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/MessageDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TestNG Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@Override</find>
+      <find>exception</find>
+      <find>_exception</find>
+      <find>new</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,14 +157,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/GenericDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/service/GenericService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/config/SpringWebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/ChatBoxDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MemberDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MessageDaoImplTest.java" />
       </list>
     </option>
   </component>
@@ -107,13 +194,14 @@
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,17 +242,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="connectnow" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdvancedTesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdvancedTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="connectnow" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdvancedTesting" type="b2602c69:ProjectViewProjectNode" />
@@ -204,25 +282,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560760462144" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560940874371" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.connectnow.dao.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +325,89 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.MessageDaoImplTest.Test">
+    <configuration name="ChatBoxDaoImplTest.findAllByUserId_exceptionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="semester5-frontend-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectnow.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.connectnow.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.connectnow.dao.impl.ChatBoxDaoImplTest" />
+      <option name="METHOD_NAME" value="findAllByUserId_exceptionTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatBoxDaoImplTest.findOneByMemberIdTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="semester5-frontend-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectnow.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.connectnow.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.connectnow.dao.impl.ChatBoxDaoImplTest" />
+      <option name="METHOD_NAME" value="findOneByMemberIdTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="semester5-frontend-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectnow.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.connectnow.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.connectnow.dao.impl.MemberDaoImplTest" />
+      <option name="METHOD_NAME" value="findOneByChatBoxIdAndUserIdTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageDaoImplTest.Test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="semester5-frontend-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.connectnow.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.connectnow.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.connectnow.dao.impl.MessageDaoImplTest" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="semester5-frontend-framework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.35" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:7649/" />
       <option name="UPDATING_POLICY" value="update-resources" />
@@ -311,6 +482,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat" />
+      <item itemvalue="TestNG./Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" />
+      <item itemvalue="TestNG.ChatBoxDaoImplTest.findAllByUserId_exceptionTest" />
+      <item itemvalue="TestNG.ChatBoxDaoImplTest.findOneByMemberIdTest" />
+      <item itemvalue="TestNG.MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest" />
+      <item itemvalue="TestNG.MessageDaoImplTest.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MessageDaoImplTest.Test" />
+        <item itemvalue="TestNG.MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest" />
+        <item itemvalue="TestNG./Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" />
+        <item itemvalue="TestNG.ChatBoxDaoImplTest.findOneByMemberIdTest" />
+        <item itemvalue="TestNG.ChatBoxDaoImplTest.findAllByUserId_exceptionTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -322,52 +510,87 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560759624444</updated>
-      <workItem from="1560759626399" duration="842000" />
+      <workItem from="1560759626399" duration="16212000" />
+      <workItem from="1560940456318" duration="367000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="_Users_vothanhtai_Documents_FPT_Polytechnic_Semester6_AdvancedTesting_Project_AdvancedTesting_src_test_java_com_connectnow_dao_impl_TestNGSuiteDao_xml - 2019.06.17 at 20h 48m 40s.xml">
+      <configuration name="/Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ChatBoxDaoImplTest_findOneByMemberIdTest - 2019.06.17 at 20h 51m 56s.xml">
+      <configuration name="ChatBoxDaoImplTest.findOneByMemberIdTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ChatBoxDaoImplTest_findOneByMemberIdTest - 2019.06.17 at 20h 53m 11s.xml">
+      <configuration name="ChatBoxDaoImplTest.findOneByMemberIdTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ChatBoxDaoImplTest_findOneByMemberIdTest - 2019.06.17 at 20h 54m 23s.xml">
+      <configuration name="ChatBoxDaoImplTest.findOneByMemberIdTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_vothanhtai_Documents_FPT_Polytechnic_Semester6_AdvancedTesting_Project_AdvancedTesting_src_test_java_com_connectnow_dao_impl_TestNGSuiteDao_xml - 2019.06.17 at 20h 55m 11s.xml">
+      <configuration name="/Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_Users_vothanhtai_Documents_FPT_Polytechnic_Semester6_AdvancedTesting_Project_AdvancedTesting_src_test_java_com_connectnow_dao_impl_TestNGSuiteDao_xml - 2019.06.17 at 20h 57m 17s.xml">
+      <configuration name="/Users/vothanhtai/Documents/FPT_Polytechnic/Semester6/AdvancedTesting/Project/AdvancedTesting/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MemberDaoImplTest_findOneByChatBoxIdAndUserIdTest - 2019.06.17 at 21h 05m 41s.xml">
+      <configuration name="MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MemberDaoImplTest_findOneByChatBoxIdAndUserIdTest - 2019.06.17 at 21h 06m 16s.xml">
+      <configuration name="MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MessageDaoImplTest_Test - 2019.06.17 at 21h 15m 22s.xml">
+      <configuration name="MessageDaoImplTest.Test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="MessageDaoImplTest_Test - 2019.06.17 at 21h 15m 48s.xml">
+      <configuration name="MessageDaoImplTest.Test" configurationId="TestNG" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="842000" />
+    <option name="totallyTimeSpent" value="16579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="DB Browser" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" />
-      <window_info active="true" anchor="bottom" id="Application Servers" visible="true" weight="0.1495327" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Learn" order="8" />
+      <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5264797" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29127726" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Codota" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.39252338" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32866043" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32866043" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Codota" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.41033927" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,28 +599,25 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/GenericDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -412,66 +632,275 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/GenericDaoTest.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="663" lean-forward="true" selection-start-line="663" selection-end-line="663" />
+          <folding>
+            <element signature="e#22661#22662#0" expanded="true" />
+            <element signature="e#22707#22708#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MessageApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="298">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/MemberApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/LoginApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/api/ChatBoxApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/GenericService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="138">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/GenericDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="226">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="545" column="16" selection-start-line="545" selection-start-column="16" selection-end-line="545" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/internal/StatelessSessionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="694" column="23" selection-start-line="694" selection-start-column="23" selection-end-line="694" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.11.Final/hibernate-core-4.3.11.Final-sources.jar!/org/hibernate/internal/CriteriaImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="381" column="17" lean-forward="true" selection-start-line="381" selection-start-column="17" selection-end-line="381" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/paging/Sorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/paging/PageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="474">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/config/SpringWebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="229" column="29" selection-start-line="229" selection-start-column="29" selection-end-line="229" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="122" column="7" lean-forward="true" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/ChatBoxDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/config/HibernateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-394">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/converter/AbstractConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/AbstractDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="e#470#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/ChatBoxDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/MemberDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/TestNGSuiteDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/impl/MessageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MemberDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/ChatBoxDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/dao/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/MessageDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectnow/entity/ChatBoxEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>

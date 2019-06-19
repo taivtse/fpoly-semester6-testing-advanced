@@ -2,10 +2,8 @@ package com.connectnow.dao.impl;
 
 import com.connectnow.dao.ChatBoxDao;
 import com.connectnow.entity.ChatBoxEntity;
-import com.connectnow.entity.MessageEntity;
 import com.connectnow.paging.Pageable;
 import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -32,7 +30,7 @@ public class ChatBoxDaoImpl extends AbstractDaoImpl<BigInteger, ChatBoxEntity> i
             criteria.add(Restrictions.eq("member.user.id", userId));
             criteria.addOrder(Order.desc("chatbox.lastMessageDate"));
             entityList = criteria.list();
-        } catch (HibernateException e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             throw e;
         } finally {
@@ -51,9 +49,6 @@ public class ChatBoxDaoImpl extends AbstractDaoImpl<BigInteger, ChatBoxEntity> i
             criteria.createAlias("chatbox.memberList", "member");
             criteria.add(Restrictions.eq("member.id", memberId));
             chatBoxEntity = (ChatBoxEntity) criteria.uniqueResult();
-        } catch (HibernateException e) {
-            logger.error(e.getMessage(), e);
-            throw e;
         } finally {
             session.close();
         }

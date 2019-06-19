@@ -46,9 +46,6 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             Criteria criteria = session.createCriteria(this.getPersistenceClass());
             this.setPageable(pageable, criteria);
             entityList = criteria.list();
-        } catch (HibernateException e) {
-            logger.error(e.getMessage(), e);
-            throw e;
         } finally {
             session.close();
         }
@@ -63,9 +60,6 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
         Session session = this.getSession();
         try {
             entity = (T) session.get(this.getPersistenceClass(), id);
-        } catch (HibernateException e) {
-            logger.error(e.getMessage(), e);
-            throw e;
         } finally {
             session.close();
         }
@@ -89,7 +83,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             }
 
             entityList = criteria.list();
-        } catch (HibernateException e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             throw e;
         } finally {
@@ -111,7 +105,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             }
 
             entity = (T) criteria.uniqueResult();
-        } catch (HibernateException e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             throw e;
         } finally {
@@ -130,7 +124,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             session.flush();
             session.refresh(entity);
             transaction.commit();
-        } catch (HibernateException e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
@@ -148,15 +142,7 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             session.flush();
             session.refresh(entity);
             transaction.commit();
-        } catch (HibernateException e) {
-            if (e instanceof NonUniqueObjectException) {
-                entity = (T) session.merge(entity);
-                session.update(entity);
-
-                transaction.commit();
-                return;
-            }
-
+        } catch(Exception e) {
             logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
@@ -173,27 +159,13 @@ public class AbstractDaoImpl<ID extends Serializable, T> implements GenericDao<I
             session.delete(entity);
             session.flush();
             transaction.commit();
-        } catch (HibernateException e) {
-            if (e instanceof NonUniqueObjectException) {
-                entity = (T) session.merge(entity);
-                session.delete(entity);
-
-                transaction.commit();
-                return;
-            }
-
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             transaction.rollback();
             throw e;
         } finally {
             session.close();
         }
-    }
-
-    @Override
-    public void deleteById(ID id) throws Exception {
-        T entity = this.findOneById(id);
-        this.delete(entity);
     }
 
     protected void setPageable(Pageable pageable, Criteria criteria) {
