@@ -1,14 +1,13 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class ChatBoxDto {
     private Long id;
     private String name;
     private String photoUrl;
     private String lastMessageContent;
-    private Date lastMessageDate;
+    private Timestamp lastMessageDate;
     private String chatBoxParam;
     private boolean readStatus;
     private Long memberId;
@@ -46,11 +45,11 @@ public class ChatBoxDto {
         this.lastMessageContent = lastMessageContent;
     }
 
-    public Date getLastMessageDate() {
+    public Timestamp getLastMessageDate() {
         return lastMessageDate;
     }
 
-    public void setLastMessageDate(Date lastMessageDate) {
+    public void setLastMessageDate(Timestamp lastMessageDate) {
         this.lastMessageDate = lastMessageDate;
     }
 

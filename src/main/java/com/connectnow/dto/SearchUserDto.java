@@ -1,7 +1,5 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-
 public class SearchUserDto {
     private Long id;
     private String name;

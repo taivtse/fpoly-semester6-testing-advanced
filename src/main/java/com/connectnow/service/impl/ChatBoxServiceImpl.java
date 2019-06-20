@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ChatBoxServiceImpl extends AbstractService<Long, ChatBoxDto, ChatBoxEntity> implements ChatBoxService {
+public class ChatBoxServiceImpl extends AbstractServiceImpl<Long, ChatBoxDto, ChatBoxEntity> implements ChatBoxService {
 
     private final ChatBoxDao chatBoxDao;
     private final UserDao userDao;

@@ -1,7 +1,5 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-
 public class UserDto {
     private Long id;
     private String email;

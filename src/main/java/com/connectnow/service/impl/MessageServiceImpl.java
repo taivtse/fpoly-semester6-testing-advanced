@@ -13,12 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class MessageServiceImpl extends AbstractService<Long, MessageDto, MessageEntity> implements MessageService {
+public class MessageServiceImpl extends AbstractServiceImpl<Long, MessageDto, MessageEntity> implements MessageService {
 
     private final MessageDao messageDao;
     private final MemberDao memberDao;

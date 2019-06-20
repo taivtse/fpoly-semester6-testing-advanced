@@ -3,7 +3,6 @@ package com.connectnow.controller;
 import com.connectnow.dto.MessageDto;
 import com.connectnow.dto.MessageSocketDto;
 import com.connectnow.service.ChatBoxService;
-import com.connectnow.service.MemberService;
 import com.connectnow.service.MessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,10 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
-import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Controller;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Controller
@@ -37,7 +36,7 @@ public class ChatController {
                             @Payload MessageSocketDto messageSocketDto) {
         MessageDto messageDto = new MessageDto();
         messageDto.setContent(messageSocketDto.getContent());
-        messageDto.setDate(new Date());
+        messageDto.setDate(new Timestamp(new Date().getTime()));
         messageDto.setType(messageSocketDto.getType());
         messageDto.setMemberId(messageSocketDto.getSentMemberId());
 

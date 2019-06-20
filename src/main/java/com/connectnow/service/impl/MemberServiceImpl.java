@@ -1,7 +1,6 @@
 package com.connectnow.service.impl;
 
 import com.connectnow.converter.GenericConverter;
-import com.connectnow.converter.MemberConverter;
 import com.connectnow.dao.GenericDao;
 import com.connectnow.dao.MemberDao;
 import com.connectnow.dto.MemberDto;
@@ -11,10 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import java.math.BigInteger;
-
 @Service
-public class MemberServiceImpl extends AbstractService<Long, MemberDto, MemberEntity> implements MemberService {
+public class MemberServiceImpl extends AbstractServiceImpl<Long, MemberDto, MemberEntity> implements MemberService {
 
     private final MemberDao memberDao;
 

@@ -1,7 +1,6 @@
 package com.connectnow.entity;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 import java.util.List;
 
 @Entity

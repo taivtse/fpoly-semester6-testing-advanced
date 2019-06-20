@@ -1,13 +1,12 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class MessageSocketDto {
     private Long id;
     private String content;
     private MessageType type;
-    private Date date;
+    private Timestamp date;
     private Long sentMemberId;
     private String sentUserProviderId;
     private Long receivedMemberId;
@@ -37,11 +36,11 @@ public class MessageSocketDto {
         this.type = type;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

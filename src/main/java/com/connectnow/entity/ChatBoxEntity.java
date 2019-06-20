@@ -1,7 +1,7 @@
 package com.connectnow.entity;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Timestamp;
 import java.util.List;
 
 @Entity
@@ -15,7 +15,7 @@ public class ChatBoxEntity {
     private Long lastMessageId;
 
     @Column(name = "last_message_date")
-    private Date lastMessageDate;
+    private Timestamp lastMessageDate;
 
     @OneToMany(mappedBy = "chatBox", fetch = FetchType.LAZY)
     private List<MemberEntity> memberList;
@@ -36,11 +36,11 @@ public class ChatBoxEntity {
         this.lastMessageId = lastMessageId;
     }
 
-    public Date getLastMessageDate() {
+    public Timestamp getLastMessageDate() {
         return lastMessageDate;
     }
 
-    public void setLastMessageDate(Date lastMessageDate) {
+    public void setLastMessageDate(Timestamp lastMessageDate) {
         this.lastMessageDate = lastMessageDate;
     }
 

@@ -1,12 +1,11 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class MessageDto {
     private Long id;
     private String content;
-    private Date date;
+    private Timestamp date;
     private MessageType type;
     private Long memberId;
     private Long userId;
@@ -27,11 +26,11 @@ public class MessageDto {
         this.content = content;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

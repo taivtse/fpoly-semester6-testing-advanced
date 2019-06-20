@@ -3,8 +3,7 @@ package com.connectnow.entity;
 import com.connectnow.dto.MessageType;
 
 import javax.persistence.*;
-import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "message")
@@ -17,7 +16,7 @@ public class MessageEntity {
     private String content;
 
     @Column(name = "date", nullable = false)
-    private Date date;
+    private Timestamp date;
 
     @Column(name = "type", nullable = false)
     @Enumerated(EnumType.STRING)
@@ -43,11 +42,11 @@ public class MessageEntity {
         this.content = content;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 
