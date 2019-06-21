@@ -7,89 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d19a0c4-4035-450a-92d3-e0bf121ca9d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/controller/IndexControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/controller/api/ChatBoxApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/service/impl/AbstractServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/service/impl/ChatBoxServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/service/impl/TestNGSuiteService.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/ChatBoxDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/Greeting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/HelloMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/MessageSocketDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/SearchUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/SearchUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/ChatBoxEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/ChatBoxEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/MessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/entity/MessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/AbstractServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/ChatBoxServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connectnow/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/connectnow/dao/impl/AbstractDaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/ChatBoxApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/controller/api/ChatBoxApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/ChatBoxDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dto/ChatBoxDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/HelloMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/MessageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dto/MessageDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/MessageSocketDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dto/MessageSocketDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/SearchUserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dto/SearchUserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/entity/ChatBoxEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/entity/ChatBoxEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/entity/MemberEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/entity/MemberEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/entity/MessageEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/entity/MessageEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/AbstractService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/ChatBoxServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/ChatBoxServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/MessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/connectnow/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/config/SpringWebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/config/SpringWebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/ChatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/ChatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/ChatBoxApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/ChatBoxApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/LoginApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/LoginApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/MemberApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/MemberApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/MessageApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/MessageApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/controller/api/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/ChatBoxDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/ChatBoxDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/GenericDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/GenericDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/MemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/MessageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/AbstractDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/AbstractDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/ChatBoxDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/ChatBoxDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/MemberDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/MemberDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/MessageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/MessageDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/ChatBoxDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/ChatBoxDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MemberDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MemberDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MessageDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MessageDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MessageSocketDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/MessageSocketDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/SearchUserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/SearchUserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/ChatBoxEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/ChatBoxEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/MemberEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/MemberEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/MessageEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/MessageEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/paging/Sorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/paging/Sorter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/ChatBoxService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/ChatBoxService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/GenericService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/GenericService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/ChatBoxServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/ChatBoxServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/MessageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/WEB-INF/classes/com/connectnow/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_header5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_slogan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/semester5-frontend-framework-1.0-SNAPSHOT/assets/images/bg_slogan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/connectnow/dao/impl/AbstractDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/connectnow/dao/impl/AbstractDaoImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,15 +53,16 @@
     <session id="-1569817917">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="DBN-SQL" value="1" />
           <entry key="JAVA" value="180" />
           <entry key="JSP" value="1" />
           <entry key="XML" value="6" />
@@ -163,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/service/impl/ChatBoxServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="221">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -624,7 +543,8 @@
       <updated>1560759624444</updated>
       <workItem from="1560759626399" duration="16212000" />
       <workItem from="1560940456318" duration="9955000" />
-      <workItem from="1561028908167" duration="93000" />
+      <workItem from="1561028908167" duration="230000" />
+      <workItem from="1561116026752" duration="150000" />
     </task>
     <servers />
   </component>
@@ -661,13 +581,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26260000" />
+    <option name="totallyTimeSpent" value="26397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23424879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2374798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -687,7 +607,7 @@
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.39252338" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -1202,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/connectnow/service/impl/ChatBoxServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
