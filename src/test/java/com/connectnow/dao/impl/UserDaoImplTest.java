@@ -22,5 +22,7 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 
         Assert.assertNotNull(partnerUserEntity);
         Assert.assertEquals(partnerUserEntity.getId(), Long.valueOf(3));
+
+
     }
 }

@@ -14,6 +14,8 @@
  Date: 21/06/2019 18:26:08
 */
 
+CREATE DATABASE `semester5-frontend-framework`;
+
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
