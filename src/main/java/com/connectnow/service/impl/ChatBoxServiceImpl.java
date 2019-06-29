@@ -40,7 +40,7 @@ public class ChatBoxServiceImpl extends AbstractServiceImpl<Long, ChatBoxDto, Ch
     }
 
     @Override
-    public List<ChatBoxDto> finAllByUserId(Pageable pageable, Long userId) {
+    public List<ChatBoxDto> findAllByUserId(Pageable pageable, Long userId) {
         List<ChatBoxEntity> chatBoxEntityList = chatBoxDao.findAllByUserId(pageable, userId);
         List<ChatBoxDto> chatBoxDtoList = new ArrayList<>();
 

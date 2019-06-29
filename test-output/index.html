@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Tran_Vi_Khang">
+              <span class="suite-name border-passed">Tran Vi Khang</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Tran_Vi_Khang">
+                    <span>TestNGSuiteDao.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Tran_Vi_Khang">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Tran_Vi_Khang">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Tran_Vi_Khang">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Tran_Vi_Khang">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Tran_Vi_Khang">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Tran_Vi_Khang">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Tran_Vi_Khang" class="hide-methods passed suite-Tran_Vi_Khang"> (hide)</a> <!-- hide-methods passed suite-Tran_Vi_Khang -->
+                      <a href="#" panel-name="suite-Tran_Vi_Khang" class="show-methods passed suite-Tran_Vi_Khang"> (show)</a> <!-- show-methods passed suite-Tran_Vi_Khang -->
+                    </span>
+                    <div class="method-list-content passed suite-Tran_Vi_Khang">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="deleteTest">deleteTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="delete_exception1Test">delete_exception1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="delete_exceptionTest">delete_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.MessageDaoImplTest" hash-for-method="findAllByChatBoxIdTest">findAllByChatBoxIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.MessageDaoImplTest" hash-for-method="findAllByChatBoxId_exceptionTest">findAllByChatBoxId_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findAllByPropertiesTest">findAllByPropertiesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findAllByProperties_exceptionTest">findAllByProperties_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.ChatBoxDaoImplTest" hash-for-method="findAllByUserIdTest">findAllByUserIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.ChatBoxDaoImplTest" hash-for-method="findAllByUserId_exceptionTest">findAllByUserId_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findAllTest">findAllTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findAll_pageableTest">findAll_pageableTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.MemberDaoImplTest" hash-for-method="findOneByChatBoxIdAndUserIdTest">findOneByChatBoxIdAndUserIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findOneByIdTest">findOneByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.ChatBoxDaoImplTest" hash-for-method="findOneByMemberIdTest">findOneByMemberIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findOneByPropertiesTest">findOneByPropertiesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="findOneByProperties_exceptionTest">findOneByProperties_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.UserDaoImplTest" hash-for-method="findPartnerUserByChatBoxIdTest">findPartnerUserByChatBoxIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="saveTest">saveTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="save_exceptionTest">save_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="updateTest">updateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="update_exception1Test">update_exception1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tran_Vi_Khang" title="vi_khang.AbstractDaoImplTest" hash-for-method="update_exceptionTest">update_exceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Tran_Vi_Khang -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tran_Vi_Khang" class="panel Tran_Vi_Khang">
+          <div class="suite-Tran_Vi_Khang-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vi_khang.AbstractDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteTest">
+                  </a> <!-- deleteTest -->
+                  <span class="method-name">deleteTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_exception1Test">
+                  </a> <!-- delete_exception1Test -->
+                  <span class="method-name">delete_exception1Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_exceptionTest">
+                  </a> <!-- delete_exceptionTest -->
+                  <span class="method-name">delete_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByPropertiesTest">
+                  </a> <!-- findAllByPropertiesTest -->
+                  <span class="method-name">findAllByPropertiesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByProperties_exceptionTest">
+                  </a> <!-- findAllByProperties_exceptionTest -->
+                  <span class="method-name">findAllByProperties_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllTest">
+                  </a> <!-- findAllTest -->
+                  <span class="method-name">findAllTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAll_pageableTest">
+                  </a> <!-- findAll_pageableTest -->
+                  <span class="method-name">findAll_pageableTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneByIdTest">
+                  </a> <!-- findOneByIdTest -->
+                  <span class="method-name">findOneByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneByPropertiesTest">
+                  </a> <!-- findOneByPropertiesTest -->
+                  <span class="method-name">findOneByPropertiesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneByProperties_exceptionTest">
+                  </a> <!-- findOneByProperties_exceptionTest -->
+                  <span class="method-name">findOneByProperties_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveTest">
+                  </a> <!-- saveTest -->
+                  <span class="method-name">saveTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="save_exceptionTest">
+                  </a> <!-- save_exceptionTest -->
+                  <span class="method-name">save_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateTest">
+                  </a> <!-- updateTest -->
+                  <span class="method-name">updateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="update_exception1Test">
+                  </a> <!-- update_exception1Test -->
+                  <span class="method-name">update_exception1Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="update_exceptionTest">
+                  </a> <!-- update_exceptionTest -->
+                  <span class="method-name">update_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tran_Vi_Khang-class-passed -->
+          <div class="suite-Tran_Vi_Khang-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vi_khang.ChatBoxDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByUserIdTest">
+                  </a> <!-- findAllByUserIdTest -->
+                  <span class="method-name">findAllByUserIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByUserId_exceptionTest">
+                  </a> <!-- findAllByUserId_exceptionTest -->
+                  <span class="method-name">findAllByUserId_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneByMemberIdTest">
+                  </a> <!-- findOneByMemberIdTest -->
+                  <span class="method-name">findOneByMemberIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tran_Vi_Khang-class-passed -->
+          <div class="suite-Tran_Vi_Khang-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vi_khang.MessageDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByChatBoxIdTest">
+                  </a> <!-- findAllByChatBoxIdTest -->
+                  <span class="method-name">findAllByChatBoxIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllByChatBoxId_exceptionTest">
+                  </a> <!-- findAllByChatBoxId_exceptionTest -->
+                  <span class="method-name">findAllByChatBoxId_exceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tran_Vi_Khang-class-passed -->
+          <div class="suite-Tran_Vi_Khang-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vi_khang.MemberDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findOneByChatBoxIdAndUserIdTest">
+                  </a> <!-- findOneByChatBoxIdAndUserIdTest -->
+                  <span class="method-name">findOneByChatBoxIdAndUserIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tran_Vi_Khang-class-passed -->
+          <div class="suite-Tran_Vi_Khang-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">vi_khang.UserDaoImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPartnerUserByChatBoxIdTest">
+                  </a> <!-- findPartnerUserByChatBoxIdTest -->
+                  <span class="method-name">findPartnerUserByChatBoxIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tran_Vi_Khang-class-passed -->
+        </div> <!-- panel Tran_Vi_Khang -->
+        <div panel-name="test-xml-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/vothanhtai/Documents/WorkSpace/Java/FPT-Polytechnic/Testing-Advanced/Project/AdvancedTesting/src/test/java/vi_khang/TestNGSuiteDao.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Tran Vi Khang&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;abstract-dao-test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;vi_khang.AbstractDaoImplTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- abstract-dao-test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;extends-dao-test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;vi_khang.ChatBoxDaoImplTest&quot;/&gt;
+      &lt;class name=&quot;vi_khang.MessageDaoImplTest&quot;/&gt;
+      &lt;class name=&quot;vi_khang.MemberDaoImplTest&quot;/&gt;
+      &lt;class name=&quot;vi_khang.UserDaoImplTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- extends-dao-test --&gt;
+&lt;/suite&gt; &lt;!-- Tran Vi Khang --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tran Vi Khang</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">abstract-dao-test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">extends-dao-test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tran Vi Khang</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tran Vi Khang</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tran_Vi_Khang');
+function tableData_Tran_Vi_Khang() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'findAllTest')
+data.setCell(0, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(0, 3, 291);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'saveTest')
+data.setCell(1, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(1, 3, 120);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateTest')
+data.setCell(2, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(2, 3, 43);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteTest')
+data.setCell(3, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(3, 3, 32);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'findAllByUserIdTest')
+data.setCell(4, 2, 'vi_khang.ChatBoxDaoImplTest')
+data.setCell(4, 3, 22);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'delete_exception1Test')
+data.setCell(5, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(5, 3, 20);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findPartnerUserByChatBoxIdTest')
+data.setCell(6, 2, 'vi_khang.UserDaoImplTest')
+data.setCell(6, 3, 17);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'findOneByChatBoxIdAndUserIdTest')
+data.setCell(7, 2, 'vi_khang.MemberDaoImplTest')
+data.setCell(7, 3, 16);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'findOneByIdTest')
+data.setCell(8, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(8, 3, 14);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'findAllByPropertiesTest')
+data.setCell(9, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(9, 3, 14);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'update_exceptionTest')
+data.setCell(10, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(10, 3, 13);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'findOneByMemberIdTest')
+data.setCell(11, 2, 'vi_khang.ChatBoxDaoImplTest')
+data.setCell(11, 3, 13);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'update_exception1Test')
+data.setCell(12, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(12, 3, 12);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'delete_exceptionTest')
+data.setCell(13, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(13, 3, 12);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'findAllByChatBoxIdTest')
+data.setCell(14, 2, 'vi_khang.MessageDaoImplTest')
+data.setCell(14, 3, 11);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'findAll_pageableTest')
+data.setCell(15, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(15, 3, 10);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'findOneByPropertiesTest')
+data.setCell(16, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(16, 3, 8);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'save_exceptionTest')
+data.setCell(17, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(17, 3, 4);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'findAllByProperties_exceptionTest')
+data.setCell(18, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(18, 3, 3);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'findOneByProperties_exceptionTest')
+data.setCell(19, 2, 'vi_khang.AbstractDaoImplTest')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'findAllByUserId_exceptionTest')
+data.setCell(20, 2, 'vi_khang.ChatBoxDaoImplTest')
+data.setCell(20, 3, 2);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'findAllByChatBoxId_exceptionTest')
+data.setCell(21, 2, 'vi_khang.MessageDaoImplTest')
+data.setCell(21, 3, 2);
+window.suiteTableData['Tran_Vi_Khang']= { tableData: data, tableDiv: 'times-div-Tran_Vi_Khang'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 681 ms</span>
+              <div id="times-div-Tran_Vi_Khang">
+              </div> <!-- times-div-Tran_Vi_Khang -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tran Vi Khang</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tran_Vi_Khang" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">vi_khang.AbstractDaoImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findAllTest())</span>
+                <span class="method-start">6544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllTest</span>
+                <span class="method-start">6547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findAllTest())</span>
+                <span class="method-start">6840 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findAll_pageableTest())</span>
+                <span class="method-start">6843 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAll_pageableTest</span>
+                <span class="method-start">6845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findAll_pageableTest())</span>
+                <span class="method-start">6856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByIdTest())</span>
+                <span class="method-start">6857 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneByIdTest</span>
+                <span class="method-start">6858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByIdTest())</span>
+                <span class="method-start">6873 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findAllByPropertiesTest())</span>
+                <span class="method-start">6874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByPropertiesTest</span>
+                <span class="method-start">6875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findAllByPropertiesTest())</span>
+                <span class="method-start">6892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findAllByProperties_exceptionTest())</span>
+                <span class="method-start">6893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByProperties_exceptionTest</span>
+                <span class="method-start">6894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findAllByProperties_exceptionTest())</span>
+                <span class="method-start">6900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByPropertiesTest())</span>
+                <span class="method-start">6901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneByPropertiesTest</span>
+                <span class="method-start">6902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByPropertiesTest())</span>
+                <span class="method-start">6911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByProperties_exceptionTest())</span>
+                <span class="method-start">6912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneByProperties_exceptionTest</span>
+                <span class="method-start">6914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.findOneByProperties_exceptionTest())</span>
+                <span class="method-start">6917 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.saveTest() throws java.lang.Exception)</span>
+                <span class="method-start">6918 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">saveTest</span>
+                <span class="method-start">6919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.saveTest() throws java.lang.Exception)</span>
+                <span class="method-start">7040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.save_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">save_exceptionTest</span>
+                <span class="method-start">7042 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.save_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7049 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.updateTest() throws java.lang.Exception)</span>
+                <span class="method-start">7050 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateTest</span>
+                <span class="method-start">7051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.updateTest() throws java.lang.Exception)</span>
+                <span class="method-start">7095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.update_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">update_exceptionTest</span>
+                <span class="method-start">7098 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.update_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.update_exception1Test() throws java.lang.Exception)</span>
+                <span class="method-start">7114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">update_exception1Test</span>
+                <span class="method-start">7126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.update_exception1Test() throws java.lang.Exception)</span>
+                <span class="method-start">7146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.deleteTest() throws java.lang.Exception)</span>
+                <span class="method-start">7147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteTest</span>
+                <span class="method-start">7149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.deleteTest() throws java.lang.Exception)</span>
+                <span class="method-start">7183 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.delete_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete_exceptionTest</span>
+                <span class="method-start">7184 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.delete_exceptionTest() throws java.lang.Exception)</span>
+                <span class="method-start">7198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.AbstractDaoImplTest.delete_exception1Test() throws java.lang.Exception)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">delete_exception1Test</span>
+                <span class="method-start">7205 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.AbstractDaoImplTest.delete_exception1Test() throws java.lang.Exception)</span>
+                <span class="method-start">7226 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">7229 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vi_khang.ChatBoxDaoImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">12262 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">12263 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.ChatBoxDaoImplTest.findAllByUserIdTest())</span>
+                <span class="method-start">12274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByUserIdTest</span>
+                <span class="method-start">12276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.ChatBoxDaoImplTest.findAllByUserIdTest())</span>
+                <span class="method-start">12299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.ChatBoxDaoImplTest.findAllByUserId_exceptionTest())</span>
+                <span class="method-start">12300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByUserId_exceptionTest</span>
+                <span class="method-start">12302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.ChatBoxDaoImplTest.findAllByUserId_exceptionTest())</span>
+                <span class="method-start">12306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.ChatBoxDaoImplTest.findOneByMemberIdTest())</span>
+                <span class="method-start">12306 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneByMemberIdTest</span>
+                <span class="method-start">12307 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.ChatBoxDaoImplTest.findOneByMemberIdTest())</span>
+                <span class="method-start">12321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">12322 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vi_khang.MessageDaoImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">12322 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">12322 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.MessageDaoImplTest.findAllByChatBoxIdTest())</span>
+                <span class="method-start">12327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByChatBoxIdTest</span>
+                <span class="method-start">12327 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.MessageDaoImplTest.findAllByChatBoxIdTest())</span>
+                <span class="method-start">12339 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.MessageDaoImplTest.findAllByChatBoxId_exceptionTest())</span>
+                <span class="method-start">12339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllByChatBoxId_exceptionTest</span>
+                <span class="method-start">12340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.MessageDaoImplTest.findAllByChatBoxId_exceptionTest())</span>
+                <span class="method-start">12344 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">12345 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vi_khang.MemberDaoImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">12345 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">12345 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest())</span>
+                <span class="method-start">12351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findOneByChatBoxIdAndUserIdTest</span>
+                <span class="method-start">12352 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.MemberDaoImplTest.findOneByChatBoxIdAndUserIdTest())</span>
+                <span class="method-start">12369 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">12369 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">vi_khang.UserDaoImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">12369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">12370 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void vi_khang.UserDaoImplTest.findPartnerUserByChatBoxIdTest())</span>
+                <span class="method-start">12375 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findPartnerUserByChatBoxIdTest</span>
+                <span class="method-start">12375 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void vi_khang.UserDaoImplTest.findPartnerUserByChatBoxIdTest())</span>
+                <span class="method-start">12394 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">12394 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

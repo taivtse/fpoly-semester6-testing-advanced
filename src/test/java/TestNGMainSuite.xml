@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="main-suite" parallel="false">
+    <suite-files>
+        <suite-file path="vi_khang/TestNGSuiteDao.xml"/>
+        <suite-file path="thanh_tai/TestNGSuiteService.xml"/>
+        <suite-file path="duy_quang/TestNGSuiteController.xml"/>
+        <suite-file path="tuong_tinh/TestNGSuiteConverter.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [converter-suite]">
+  <test thread-count="5" name="index-test(failed)">
+    <classes>
+      <class name="tuong_tinh.IndexControllerTest">
+        <methods>
+          <include name="indexTest"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- tuong_tinh.IndexControllerTest -->
+    </classes>
+  </test> <!-- index-test(failed) -->
+  <test thread-count="5" name="converter-test(failed)">
+    <classes>
+      <class name="tuong_tinh.ChatBoxConverterTest">
+        <methods>
+          <include name="entityListToDtoListTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tuong_tinh.ChatBoxConverterTest -->
+    </classes>
+  </test> <!-- converter-test(failed) -->
+</suite> <!-- Failed suite [converter-suite] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Vo Thanh Tai" parallel="false">
+    <test name="abstract-service-test">
+        <classes>
+            <class name="thanh_tai.AbstractServiceImplTest"/>
+        </classes>
+    </test>
+
+    <test name="extends-service-test">
+        <classes>
+            <class name="thanh_tai.ChatBoxServiceImplTest"/>
+            <class name="thanh_tai.MemberServiceImplTest"/>
+            <class name="thanh_tai.MessageServiceImplTest"/>
+            <class name="thanh_tai.UserServiceImplTest"/>
+        </classes>
+    </test>
+</suite>

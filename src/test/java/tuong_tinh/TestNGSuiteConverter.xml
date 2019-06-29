@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Vo Van Tuong Tinh" parallel="false">
+    <test name="index-test">
+        <classes>
+            <class name="tuong_tinh.IndexControllerTest"/>
+        </classes>
+    </test>
+
+    <test name="converter-test">
+        <classes>
+            <class name="tuong_tinh.ChatBoxConverterTest"/>
+            <class name="tuong_tinh.MemberConverterTest"/>
+            <class name="tuong_tinh.MessageConverterTest"/>
+            <class name="tuong_tinh.UserConverterTest"/>
+        </classes>
+    </test>
+</suite>

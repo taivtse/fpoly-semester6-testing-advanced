@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tran Duy Quang" parallel="false">
+    <test name="api-test">
+        <classes>
+            <class name="duy_quang.ChatBoxApiTest"/>
+            <class name="duy_quang.MemberApiTest"/>
+            <class name="duy_quang.MessageApiTest"/>
+            <class name="duy_quang.UserApiTest"/>
+        </classes>
+    </test>
+</suite>

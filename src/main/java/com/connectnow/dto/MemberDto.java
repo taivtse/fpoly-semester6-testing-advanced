@@ -1,7 +1,5 @@
 package com.connectnow.dto;
 
-import java.math.BigInteger;
-
 public class MemberDto {
     private Long id;
     private ChatBoxDto chatBox;
@@ -32,7 +30,7 @@ public class MemberDto {
         this.user = user;
     }
 
-    public boolean isReadStatus() {
+    public boolean getReadStatus() {
         return readStatus;
     }
 

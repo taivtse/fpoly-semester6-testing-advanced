@@ -25,7 +25,7 @@ public class ChatBoxApi {
     @GetMapping
     @ResponseBody
     public List<ChatBoxDto> getList(@RequestParam(name = "userId") Long userId) {
-        return chatBoxService.finAllByUserId(null, userId);
+        return chatBoxService.findAllByUserId(null, userId);
     }
 
     @GetMapping("find-by/member")
@@ -37,12 +37,7 @@ public class ChatBoxApi {
 
     @PostMapping
     @ResponseBody
-    public ChatBoxDto create(@RequestBody ChatBoxDto chatBoxDto) {
-        try {
-            return chatBoxService.save(chatBoxDto);
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        }
-        return null;
+    public ChatBoxDto create(@RequestBody ChatBoxDto chatBoxDto) throws Exception {
+        return chatBoxService.save(chatBoxDto);
     }
 }

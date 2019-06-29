@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Tran Vi Khang" parallel="false">
+    <test name="abstract-dao-test">
+        <classes>
+            <class name="vi_khang.AbstractDaoImplTest"/>
+        </classes>
+    </test>
+
+    <test name="extends-dao-test">
+        <classes>
+            <class name="vi_khang.ChatBoxDaoImplTest"/>
+            <class name="vi_khang.MessageDaoImplTest"/>
+            <class name="vi_khang.MemberDaoImplTest"/>
+            <class name="vi_khang.UserDaoImplTest"/>
+        </classes>
+    </test>
+</suite>

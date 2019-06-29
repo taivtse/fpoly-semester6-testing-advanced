@@ -29,9 +29,6 @@ public class ChatBoxDaoImpl extends AbstractDaoImpl<Long, ChatBoxEntity> impleme
             criteria.add(Restrictions.eq("member.user.id", userId));
             criteria.addOrder(Order.desc("chatbox.lastMessageDate"));
             entityList = criteria.list();
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-            throw e;
         } finally {
             session.close();
         }

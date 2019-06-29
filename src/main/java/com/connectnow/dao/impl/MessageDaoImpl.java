@@ -4,7 +4,6 @@ import com.connectnow.dao.MessageDao;
 import com.connectnow.entity.MessageEntity;
 import com.connectnow.paging.Pageable;
 import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -32,9 +31,6 @@ public class MessageDaoImpl extends AbstractDaoImpl<Long, MessageEntity> impleme
             criteria.addOrder(Order.asc("date"));
 
             entityList = criteria.list();
-        } catch (HibernateException e) {
-            logger.error(e.getMessage(), e);
-            throw e;
         } finally {
             session.close();
         }

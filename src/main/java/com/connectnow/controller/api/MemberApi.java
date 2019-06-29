@@ -29,22 +29,18 @@ public class MemberApi {
         try {
             Long memberId = Long.valueOf(data.get("memberId").toString());
             boolean readStatus = (boolean) data.get("readStatus");
-            this.memberService.updateReadStatusByMemberId(memberId, readStatus);
+            MemberDto memberDto = this.memberService.updateReadStatusByMemberId(memberId, readStatus);
+
+            return ResponseEntity.ok(memberDto);
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
-            return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok(null);
+        return ResponseEntity.badRequest().build();
     }
 
     @PostMapping
     @ResponseBody
-    public MemberDto create(@RequestBody MemberDto memberDto) {
-        try {
-            return memberService.save(memberDto);
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        }
-        return null;
+    public MemberDto create(@RequestBody MemberDto memberDto) throws Exception {
+        return memberService.save(memberDto);
     }
 }
